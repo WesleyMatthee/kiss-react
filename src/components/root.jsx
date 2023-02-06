@@ -14,7 +14,6 @@ export default function root() {
         </div>
       </header>
     </div>
-  
 
   
     <section className='container'>
