@@ -1,11 +1,15 @@
 import './root.css';
 
-import Nav from './nav'
-
 export default function root() {
   return (
     <main>
-      <Nav/>
+    {/* Top nav bar (fixed) */}
+    <nav>
+        <div className='logo'>
+          <img className='white-logo' src='/images/Kiss-Logo-White.png'></img>
+        </div>
+        <img></img>
+    </nav>
 
     <div className='wrapper'>
       <header className='main-header'>
