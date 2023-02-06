@@ -1,7 +1,7 @@
 import './root.css';
 import Nav from './nav';
 import Carousel from './Carousel'
-import { CarouselItem } from './Carouseltem';
+import { CarouselItem } from './CarouselItem';
 
 export default function root() {
   return (
