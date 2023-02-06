@@ -1,6 +1,6 @@
-import './App.css';
+import './root.css';
 
-export default function App() {
+export default function root() {
   return (
     <main>
     {/* Top nav bar (fixed) */}
