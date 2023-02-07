@@ -17,7 +17,7 @@ const navigate = useNavigate();
        <FontAwesomeIcon icon={faHouse} onClick={() => navigate("/")} className="footer-icon"/>
        <FontAwesomeIcon icon={faChartSimple} className="footer-icon"/>
        <FontAwesomeIcon icon={faUser} className="footer-icon"/>
-       <FontAwesomeIcon icon={faPhone} className="footer-icon"/>
+       <FontAwesomeIcon icon={faPhone} className="footer-phone"/>
        </div>
       </footer>
 
