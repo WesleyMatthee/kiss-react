@@ -38,9 +38,8 @@ export default function SkinCondition() {
 
 
 
-      <footer >
+
         <Footer />
-      </footer>
     </main>
   );
 }

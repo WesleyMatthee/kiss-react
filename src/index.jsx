@@ -11,11 +11,10 @@ import {
 import ErrorPage from './error-page';
 import Root from './components/root';
 import Cpr from './components/cpr';
-import AdultCpr from './components/adultCpr'
-import ChildCpr from './components/childCpr'
-import InfantCpr from './components/infantCpr'
+import AdultCpr from './components/adultCpr';
+import ChildCpr from './components/childCpr';
+import InfantCpr from './components/infantCpr';
 import Choking from './components/choking';
-import Footer from './components/footer';
 import AdultChoking from './components/adultChoking';
 import ChildChoking from './components/childChoking';
 import InfantChoking from './components/infantChoking';
@@ -26,6 +25,7 @@ import SkinCondition from './components/skinCondition';
 import Pearl from './components/pearl';
 import Circulation from './components/circulation';
 import ExtraNotes from './components/extraNotes';
+
 
 const router = createBrowserRouter([
   {

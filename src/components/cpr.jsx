@@ -7,6 +7,7 @@ import { CarouselItem } from './CarouselItem';
 
 export default function Cpr() {
   const navigate = useNavigate();
+  
 
   return (
     <main>
