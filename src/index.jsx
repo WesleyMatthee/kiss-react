@@ -22,6 +22,7 @@ import Monitor from './components/monitor';
 import Pulse from './components/pulse';
 import Respirations from './components/respirations';
 import SkinCondition from './components/skinCondition';
+import Pearl from './components/pearl';
 
 const router = createBrowserRouter([
   {

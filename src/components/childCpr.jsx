@@ -1,9 +1,9 @@
 import './root.css';
 import Nav from './nav';
-// import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 export default function ChildCpr() {
-// const navigate = useNavigate();
+const navigate = useNavigate();
 
   return (
     <main>
@@ -16,7 +16,10 @@ export default function ChildCpr() {
         </div>
     </div>
 
-    <div className='button-buffer'><button className='start-button' type='button'>START</button> <button className='monitor-button' type='button'>MONITOR</button></div>
+    <div className='button-buffer'>
+        <button className='start-button' type='button'>START</button>
+        <button className='monitor-button' type='button' onClick={() => navigate('/monitor')}>MONITOR</button>
+      </div>
 
   
     <section className='container'>

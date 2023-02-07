@@ -25,16 +25,16 @@ export default function Pearl() {
 
 
       <section className='container'>
-        <ol className='pearl-steps'>
-          <li>Cover both of their eyes.</li>
-          <li>Using either natural sunlight or a phone light, uncover one of their eyes and shine the light towards the uncovered eye.</li>
-          <li>Pay attention to the pupil of the individual, it should shrink when exposed to light</li>
-          <li>Repeat the previous steps for the other eye and make note if the pupils were both equally reactive to light</li>
+        <ol className='circulation-steps'>
+          <li>Pat their arms, legs, back, and head to see if there is any bleeding occuring there.</li>
+          <li>Place gauze on the wound and have them put pressure if possible, if not you apply pressure on any bleeds you have found.</li>
+          <li>Press on their fingernail enough to have it turn white. When you release make note of how long it takes to return to its original color (pinkish). </li>
+          <li>Repeat the previous step on the other hand, it should take no more than 2 seconds for the color to return. If it takes longer it can imply a circulation issue.</li>
         </ol>
       </section>
       <form><input type="text" /> <button className='submit-button' type="submit"></button> </form>
-      <button className='back-monitor' onClick={() => navigate('/skinCondition')}>BACK</button>
-      <button className='next-monitor' onClick={() => navigate('/circulation')}>NEXT</button>
+      <button className='back-monitor' onClick={() => navigate('/pearl')}>BACK</button>
+      <button className='next-monitor' onClick={() => navigate('/extraNotes')}>NEXT</button>
 
 
 

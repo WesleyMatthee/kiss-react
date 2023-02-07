@@ -1,9 +1,10 @@
 import './root.css';
 import Nav from './nav';
-// import { useNavigate } from 'react-router-dom'
+import Footer from './footer';
+import { useNavigate } from 'react-router-dom'
 
 export default function AdultCpr() {
-// const navigate = useNavigate();
+const navigate = useNavigate();
 
   return (
     <main>
@@ -16,7 +17,10 @@ export default function AdultCpr() {
         </div>
     </div>
 
-    <div className='button-buffer'><button className='start-button' type='button'>START</button> <button className='monitor-button' type='button'>MONITOR</button></div>
+    <div className='button-buffer'>
+        <button className='start-button' type='button'>START</button>
+        <button className='monitor-button' type='button' onClick={() => navigate('/monitor')}>MONITOR</button>
+      </div>
 
   
     <section className='container'>
@@ -33,10 +37,10 @@ export default function AdultCpr() {
     </section>
     
     
-   {/* footer (fixed)  */}
-  <footer>
-    
-  </footer>
+  
+    <footer >
+        <Footer />
+      </footer>
   </main>
   );
 
