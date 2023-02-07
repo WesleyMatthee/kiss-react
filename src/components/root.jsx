@@ -21,7 +21,7 @@ const navigate = useNavigate();
     </Carousel>
     </div>
 
-    <div className='button-buffer'><button className='start-button' type='button'>START</button> <button className='monitor-button' type='button'>MONITOR</button></div>
+    <div className='button-buffer'><button className='start-button' type='button'>START</button> <button className='monitor-button' type='button' onClick={() => navigate('/monitor')}>MONITOR</button></div>
 
   
     <section className='container'>
