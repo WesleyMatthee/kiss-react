@@ -1,11 +1,13 @@
 import './root.css';
 import Nav from './nav';
+import { useNavigate } from 'react-router-dom'
 import Carousel from './Carousel'
 import { CarouselItem } from './CarouselItem';
 import Footer from './footer';
 
+export default function Root() {
+const navigate = useNavigate();
 
-export default function root() {
   return (
     <main className='Root'>
 
@@ -24,8 +26,8 @@ export default function root() {
   
     <section className='container'>
       <ul className='emergencies-button'>
-        <button type="button">CPR</button>
-        <button type="button">Choking</button>
+        <button type="button" onClick={() => navigate('/cpr')}>CPR</button>
+        <button type="button" onClick={() => navigate('/choking')}>Choking</button>
         <button type="button">Bleeding</button>
         <button type="button">Anaphilylaxis</button>
         <button type="button">Other</button>

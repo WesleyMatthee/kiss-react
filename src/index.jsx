@@ -2,11 +2,20 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import Root from './components/root';
+import Cpr from './components/cpr';
+import AdultCpr from './components/adultCpr'
+import ChildCpr from './components/childCpr'
+import InfantCpr from './components/infantCpr'
+import Choking from './components/choking';
+import AdultChoking from './components/adultChoking';
+import ChildChoking from './components/childChoking';
+import InfantChoking from './components/infantChoking';
+
 import reportWebVitals from './reportWebVitals';
 import {
   createBrowserRouter,
   RouterProvider,
-} from "react-router-dom";
+  } from "react-router-dom";
 import ErrorPage from './error-page';
 
 const router = createBrowserRouter([
@@ -14,6 +23,46 @@ const router = createBrowserRouter([
     path: "/",
     element: <Root />,
     errorElement: <ErrorPage />,
+  },
+  {
+    path: "/cpr",
+    element: <Cpr />,
+    errorElement: <ErrorPage />
+  },
+  {
+    path: "/adultCpr",
+    element: <AdultCpr />,
+    errorElement: <ErrorPage />
+  },
+  {
+    path: "/childCpr",
+    element: <ChildCpr />,
+    errorElement: <ErrorPage />
+  },
+  {
+    path: "/infantCpr",
+    element: <InfantCpr />,
+    errorElement: <ErrorPage />
+  },
+  {
+    path: "/choking",
+    element: <Choking />,
+    errorElement: <ErrorPage />
+  },
+  {
+    path: "/adultChoking",
+    element: <AdultChoking />,
+    errorElement: <ErrorPage />
+  },
+  {
+    path: "/childChoking",
+    element: <ChildChoking />,
+    errorElement: <ErrorPage />
+  },
+  {
+    path: "/infantChoking",
+    element: <InfantChoking />,
+    errorElement: <ErrorPage />
   },
 ])
 
