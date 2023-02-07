@@ -21,7 +21,10 @@ export default function Pulse() {
         </Carousel>
       </div>
 
-      <div className='button-buffer'><button className='start-timer' type='button'>START TIMER</button> <button className='monitor-button' type='button'>MONITOR</button></div>
+      <div className='button-buffer'>
+        <button className='start-button' type='button'>START</button>
+        <button className='monitor-button' type='button' onClick={() => navigate('/monitor')}>MONITOR</button>
+      </div>
 
 
       <section className='container'>
