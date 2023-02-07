@@ -13,11 +13,12 @@ const navigate = useNavigate();
   return (
 
       <footer className="footer">
-
-       <FontAwesomeIcon icon={faHouse} onClick={() => navigate("/")}/>
-       <FontAwesomeIcon icon={faChartSimple} />
-       <FontAwesomeIcon icon={faUser} />
-       <FontAwesomeIcon icon={faPhone} />
+       <div>
+       <FontAwesomeIcon icon={faHouse} onClick={() => navigate("/")} className="footer-icon"/>
+       <FontAwesomeIcon icon={faChartSimple} className="footer-icon"/>
+       <FontAwesomeIcon icon={faUser} className="footer-icon"/>
+       <FontAwesomeIcon icon={faPhone} className="footer-icon"/>
+       </div>
       </footer>
 
   )
