@@ -23,6 +23,7 @@ import Pulse from './components/pulse';
 import Respirations from './components/respirations';
 import SkinCondition from './components/skinCondition';
 import Pearl from './components/pearl';
+import Circulation from './components/circulation';
 
 const router = createBrowserRouter([
   {
@@ -95,9 +96,14 @@ const router = createBrowserRouter([
     element: <Pearl />,
     errorElement: <ErrorPage />,
   },
+  {
+    path: "/circulation",
+    element: <Circulation />,
+    errorElement: <ErrorPage />,
+  },
   // {
-  //   path: "/circulation",
-  //   element: <Circulation />,
+  //   path: "/extraNotes",
+  //   element: <ExtraNotes />,
   //   errorElement: <ErrorPage />,
   // },
 ])

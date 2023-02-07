@@ -5,7 +5,7 @@ import Carousel from './Carousel'
 import { CarouselItem } from './CarouselItem';
 import Footer from './footer';
 
-export default function Pearl() {
+export default function Circulation() {
   const navigate = useNavigate();
 
   return (
