@@ -3,13 +3,17 @@ nav {
     
 }
 
-.logo {
+.nav-bar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items:flex-end;
 }
 
 .white-logo {
     max-width: 40px;
+}
+
+.timer {
+    display: flex;
+    align-items: flex-end;
 }

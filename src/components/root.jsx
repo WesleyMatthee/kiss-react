@@ -1,17 +1,22 @@
 import './root.css';
 import Nav from './nav';
+import Carousel from './Carousel'
+import { CarouselItem } from './CarouselItem';
 import Footer from './footer';
+
 
 export default function root() {
   return (
-    <main>
+    <main className='Root'>
 
     <Nav/>
 
     <div className='carousel-wrapper'>
-        <div className='profileimage'>
-            <img className='userimage' src='/images/Kiss-Logo-Red.png'></img> 
-        </div>
+    <Carousel>
+      <CarouselItem><img className='carousel-img' src='/images/Proxy-IMG.png'/></CarouselItem>
+      <CarouselItem>Item2</CarouselItem>
+      <CarouselItem>Item3</CarouselItem>
+    </Carousel>
     </div>
 
     <div className='button-buffer'><button className='start-button' type='button'>START</button> <button className='monitor-button' type='button'>MONITOR</button></div>
