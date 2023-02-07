@@ -2,6 +2,7 @@ import './root.css';
 import Nav from './nav';
 import { useNavigate } from 'react-router-dom'
 
+
 export default function Choking(){
 const navigate = useNavigate();
 
@@ -30,7 +31,7 @@ const navigate = useNavigate();
     
    {/* footer (fixed)  */}
   <footer>
-    
+
   </footer>
   </main>
   );

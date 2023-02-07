@@ -15,6 +15,7 @@ import AdultCpr from './components/adultCpr'
 import ChildCpr from './components/childCpr'
 import InfantCpr from './components/infantCpr'
 import Choking from './components/choking';
+import Footer from './components/footer';
 import AdultChoking from './components/adultChoking';
 import ChildChoking from './components/childChoking';
 import InfantChoking from './components/infantChoking';

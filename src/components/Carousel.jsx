@@ -43,7 +43,7 @@ const Carousel = ({ children }) => {
                     return React.cloneElement(child, { width: "100%" });
                 })}
             </div>
-            <div className='indicators'>
+            {/* <div className='indicators'>
                 <button onClick={() => { updateIndex(activeIndex - 1) }}>PREV</button>
                 {React.Children.map(children, (child, index) => {
                     return (
@@ -51,7 +51,7 @@ const Carousel = ({ children }) => {
                         )
                 })}
                 <button onClick={() => { updateIndex(activeIndex + 1) }}>NEXT</button>
-            </div>
+            </div> */}
         </div>
     )
 }

@@ -11,39 +11,39 @@ export default function Root() {
   return (
     <main className='Root'>
 
-      <Nav />
+    <Nav/>
 
-      <div className='carousel-wrapper'>
-        <Carousel>
-          <CarouselItem><img className='carousel-img' src='/images/Proxy-IMG.png' /></CarouselItem>
-          <CarouselItem>Item2</CarouselItem>
-          <CarouselItem>Item3</CarouselItem>
-        </Carousel>
-      </div>
+    <div className='carousel-wrapper'>
+    <Carousel>
+      <CarouselItem><img className='carousel-img' src='/images/Proxy-IMG.png'/></CarouselItem>
+      <CarouselItem><img className='carousel-img' src='/images/Proxy-IMG.png'/></CarouselItem>
+      <CarouselItem><img className='carousel-img' src='/images/Proxy-IMG.png'/></CarouselItem>
+    </Carousel>
+    </div>
 
-      <div className='button-buffer'>
+     <div className='button-buffer'>
         <button className='start-button' type='button'>START</button>
         <button className='monitor-button' type='button' onClick={() => navigate('/monitor')}>MONITOR</button>
       </div>
 
-
-      <section className='container'>
-        <ul className='emergencies-button'>
-          <button type="button" onClick={() => navigate('/cpr')}>CPR</button>
-          <button type="button" onClick={() => navigate('/choking')}>Choking</button>
-          <button type="button">Bleeding</button>
-          <button type="button">Anaphilylaxis</button>
-          <button type="button">Other</button>
-        </ul>
-      </section>
-
-
-
-
-      <footer >
-        <Footer />
-      </footer>
-    </main>
+  
+    <section className='container'>
+      <ul className='emergencies-button'>
+        <button type="button" onClick={() => navigate('/cpr')}>CPR</button>
+        <button type="button" onClick={() => navigate('/choking')}>Choking</button>
+        <button type="button">Bleeding</button>
+        <button type="button">Anaphilylaxis</button>
+        <button type="button">Other</button>
+      </ul>
+    </section>
+    
+    
+   
+    
+  <footer >
+    <Footer/>
+  </footer>
+  </main>
   );
 }
 
