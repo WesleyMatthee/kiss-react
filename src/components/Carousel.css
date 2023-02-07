@@ -1,7 +1,15 @@
-.carousel {
+carousel-wrapper {
     display: flex;
+}
+
+.carousel {
     flex-direction: column;
     overflow: hidden;
+}
+
+.carousel-img {
+    display: flex;
+    min-width: 100vw;
 }
 
 .inner {
@@ -11,9 +19,9 @@
 
 .carousel-item {
     display: inline-flex;
-    align-items: center;
+    align-items:center;
     justify-content: center;
-    height: 200px;
+    height: auto;
     background-color: aquamarine;
     color: #fff;
 }

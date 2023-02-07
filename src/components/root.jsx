@@ -10,9 +10,11 @@ export default function root() {
     <Nav/>
 
     <div className='carousel-wrapper'>
-        <div className='profileimage'>
-            <img className='userimage' src='/images/Kiss-Logo-Red.png'></img> 
-        </div>
+    <Carousel>
+      <CarouselItem><img className='carousel-img' src='/images/Proxy-IMG.png'/></CarouselItem>
+      <CarouselItem>Item2</CarouselItem>
+      <CarouselItem>Item3</CarouselItem>
+    </Carousel>
     </div>
 
     <div className='button-buffer'><button className='start-button' type='button'>START</button> <button className='monitor-button' type='button'>MONITOR</button></div>
