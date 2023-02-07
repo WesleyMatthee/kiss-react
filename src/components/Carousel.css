@@ -1,0 +1,40 @@
+carousel-wrapper {
+    display: flex;
+}
+
+.carousel {
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.carousel-img {
+    display: flex;
+    min-width: 100vw;
+}
+
+.inner {
+    white-space: nowrap;
+    transition: transform 0.3s;
+}
+
+.carousel-item {
+    display: inline-flex;
+    align-items:center;
+    justify-content: center;
+    height: auto;
+    background-color: aquamarine;
+    color: #fff;
+}
+
+.indicators {
+    display: flex
+}
+
+.indicators > button {
+    margin: 5px
+}
+
+.indicators > button.active {
+    background-color: green;
+    color: #fff;
+}
