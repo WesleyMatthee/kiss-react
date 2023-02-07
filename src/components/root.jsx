@@ -1,5 +1,6 @@
 import './root.css';
 import Nav from './nav';
+import Footer from './footer';
 
 export default function root() {
   return (
@@ -27,14 +28,13 @@ export default function root() {
     </section>
     
     
-   {/* footer (fixed)  */}
-  <footer>
+   
     
+  <footer >
+    <Footer/>
   </footer>
   </main>
   );
-
- 
 }
 
  
