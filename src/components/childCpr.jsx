@@ -1,6 +1,9 @@
 import './root.css';
 import Nav from './nav';
-import { useNavigate } from 'react-router-dom'
+import Footer from './footer';
+import { useNavigate } from 'react-router-dom';
+import Carousel from './Carousel';
+import { CarouselItem } from './CarouselItem';
 
 export default function ChildCpr() {
   const navigate = useNavigate();

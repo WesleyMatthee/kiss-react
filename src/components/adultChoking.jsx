@@ -1,7 +1,9 @@
 import './root.css';
 import Nav from './nav';
 import Footer from './footer';
-import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
+import Carousel from './Carousel';
+import { CarouselItem } from './CarouselItem';
 
 export default function AdultChoking() {
   const navigate = useNavigate();
