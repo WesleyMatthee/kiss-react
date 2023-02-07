@@ -2,7 +2,7 @@ import './root.css';
 import Nav from './nav';
 import { useNavigate } from 'react-router-dom'
 
-export default function Root() {
+export default function Choking(){
 const navigate = useNavigate();
 
   return (
@@ -21,11 +21,9 @@ const navigate = useNavigate();
   
     <section className='container'>
       <ul className='emergencies-button'>
-        <button type="button" onClick={() => navigate('/cpr')}>CPR</button>
-        <button type="button" onClick={() => navigate('/choking')}>Choking</button>
-        <button type="button">Bleeding</button>
-        <button type="button">Anaphilylaxis</button>
-        <button type="button">Other</button>
+        <button type="button" onClick={() => navigate('/adultChoking')}>Adult 15yrs +</button>
+        <button type="button" onClick={() => navigate('/childChoking')}>Child 2-15yrs</button>
+        <button type="button" onClick={() => navigate('/infantChoking')}>Infant -2yrs</button>
       </ul>
     </section>
     
