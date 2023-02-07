@@ -20,6 +20,7 @@ import ChildChoking from './components/childChoking';
 import InfantChoking from './components/infantChoking';
 import Monitor from './components/monitor';
 import Pulse from './components/pulse';
+import Respirations from './components/respirations';
 
 
 const router = createBrowserRouter([
@@ -78,11 +79,11 @@ const router = createBrowserRouter([
     element: <Pulse />,
     errorElement: <ErrorPage />,
   },
-  //   {
-  //   path: "/respirations",
-  //   element: <Respirations />,
-  //   errorElement: <ErrorPage />,
-  // },
+  {
+    path: "/respirations",
+    element: <Respirations />,
+    errorElement: <ErrorPage />,
+  },
   // {
   //   path: "/skinCondition",
   //   element: <SkinCondition />,
