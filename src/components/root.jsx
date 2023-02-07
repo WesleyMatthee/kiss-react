@@ -2,6 +2,8 @@ import './root.css';
 import Nav from './nav';
 import Carousel from './Carousel'
 import { CarouselItem } from './CarouselItem';
+import Footer from './footer';
+
 
 export default function root() {
   return (
@@ -31,14 +33,13 @@ export default function root() {
     </section>
     
     
-   {/* footer (fixed)  */}
-  <footer>
+   
     
+  <footer >
+    <Footer/>
   </footer>
   </main>
   );
-
- 
 }
 
  
