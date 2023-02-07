@@ -35,9 +35,13 @@
 }
 
 .start-button{
-  background-color: darkgreen;
+  background-color: rgb(22, 153, 22);
 }
 
 .monitor-button{
   background-color: cornflowerblue;
+}
+
+.start-timer{
+  background-color: rgb(22, 153, 22);
 }

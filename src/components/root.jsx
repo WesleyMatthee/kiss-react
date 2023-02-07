@@ -6,7 +6,7 @@ import { CarouselItem } from './CarouselItem';
 import Footer from './footer';
 
 export default function Root() {
-const navigate = useNavigate();
+  const navigate = useNavigate();
 
   return (
     <main className='Root'>
@@ -21,7 +21,10 @@ const navigate = useNavigate();
     </Carousel>
     </div>
 
-    <div className='button-buffer'><button className='start-button' type='button'>START</button> <button className='monitor-button' type='button'>MONITOR</button></div>
+     <div className='button-buffer'>
+        <button className='start-button' type='button'>START</button>
+        <button className='monitor-button' type='button' onClick={() => navigate('/monitor')}>MONITOR</button>
+      </div>
 
   
     <section className='container'>
@@ -44,4 +47,4 @@ const navigate = useNavigate();
   );
 }
 
- 
+
