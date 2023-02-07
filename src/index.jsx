@@ -24,6 +24,7 @@ import Respirations from './components/respirations';
 import SkinCondition from './components/skinCondition';
 import Pearl from './components/pearl';
 import Circulation from './components/circulation';
+import ExtraNotes from './components/extraNotes';
 
 const router = createBrowserRouter([
   {
@@ -101,11 +102,11 @@ const router = createBrowserRouter([
     element: <Circulation />,
     errorElement: <ErrorPage />,
   },
-  // {
-  //   path: "/extraNotes",
-  //   element: <ExtraNotes />,
-  //   errorElement: <ErrorPage />,
-  // },
+  {
+    path: "/extraNotes",
+    element: <ExtraNotes />,
+    errorElement: <ErrorPage />,
+  },
 ])
 
 
