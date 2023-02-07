@@ -12,9 +12,11 @@ export default function ChildChoking() {
       <Nav />
 
       <div className='carousel-wrapper'>
-        <div className='profileimage'>
-          <img className='userimage' src='/images/Kiss-Logo-Red.png'></img>
-        </div>
+        <Carousel>
+          <CarouselItem><img className='carousel-img' src='/images/Proxy-IMG.png' /></CarouselItem>
+          <CarouselItem><img className='carousel-img' src='/images/Proxy-IMG.png' /></CarouselItem>
+          <CarouselItem><img className='carousel-img' src='/images/Proxy-IMG.png' /></CarouselItem>
+        </Carousel>
       </div>
 
       <div className='button-buffer'>

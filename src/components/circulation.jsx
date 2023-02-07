@@ -13,13 +13,15 @@ export default function Circulation() {
 
       <Nav />
 
+
       <div className='carousel-wrapper'>
         <Carousel>
           <CarouselItem><img className='carousel-img' src='/images/Proxy-IMG.png' /></CarouselItem>
-          <CarouselItem>Item2</CarouselItem>
-          <CarouselItem>Item3</CarouselItem>
+          <CarouselItem><img className='carousel-img' src='/images/Proxy-IMG.png' /></CarouselItem>
+          <CarouselItem><img className='carousel-img' src='/images/Proxy-IMG.png' /></CarouselItem>
         </Carousel>
       </div>
+
 
       <div className='button-buffer'>
         <button className='start-button' type='button'>START</button>
