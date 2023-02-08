@@ -8,7 +8,7 @@ import { faChartSimple } from '@fortawesome/free-solid-svg-icons'
 import { faPhone } from '@fortawesome/free-solid-svg-icons'
 import { useNavigate } from "react-router-dom";
 import PhoneModal from "./PhoneModal";
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 
 export default function Footer(props){
@@ -27,7 +27,7 @@ export default function Footer(props){
       </footer>
         <div className='phone-modal'>
          <PhoneModal open={isOpen} onClose={() => setIsOpen(false)} >
-            Call 911
+            
          </PhoneModal>
         </div>
     </>
