@@ -1,9 +1,4 @@
-import './root.css';
-import Nav from './nav';
-import Footer from './footer';
-import { useNavigate } from 'react-router-dom';
-import Carousel from './Carousel';
-import { CarouselItem } from './CarouselItem';
+import '../index.css';
 import { useEffect, useState } from 'react';
 
 export default function UserHistory() {
@@ -31,6 +26,4 @@ export default function UserHistory() {
         })}
     </main>
   );
-
-
-}
+};
