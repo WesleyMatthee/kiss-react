@@ -1,5 +1,5 @@
 import { Route, Routes, useNavigate } from "react-router-dom";
-
+import React from "react";
 import Nav from "./components/Templates/nav";
 import Footer from "./components/Templates/footer";
 import Home from "./components/Home";
