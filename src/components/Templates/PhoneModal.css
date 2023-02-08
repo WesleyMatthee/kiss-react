@@ -7,6 +7,12 @@
   z-index: 1000;
 }
 
+.close-modal{
+  background-color: none;
+  padding: '50px';
+  z-index: 1000;
+}
+
 .dark-overlay{
   position: fixed;
   top: 0;
