@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-
+import React from 'react';
 import '../index.css'
 import Pulse from './subMonitor/Pulse';
 import Respirations from './subMonitor/Respirations';

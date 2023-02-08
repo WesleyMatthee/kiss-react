@@ -19,8 +19,8 @@ export default function PhoneModal({ open, onClose }){
         <div className='phone-modal'>
           <FontAwesomeIcon icon={faCircleXmark} onClick={onClose} className="close-modal"/>
           <SwipeButton 
-            mainText="Swipe me" 
-            overlayText="S I K E" 
+            mainText="Call 911" 
+            overlayText="CALLING" 
             onSwipeDone={function () {
             console.log("Done!");
            }} 

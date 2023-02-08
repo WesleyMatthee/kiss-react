@@ -1,6 +1,5 @@
-import { Route, Routes, useNavigate } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import React, { useState } from "react";
-
 import Nav from "./components/Templates/nav";
 import Footer from "./components/Templates/footer";
 import Home from "./components/Home";
@@ -24,9 +23,9 @@ export default function App() {
       <Nav />
       <div className='carousel-wrapper'>
         <Carousel>
-          <CarouselItem><img className='carousel-img' src='/images/Proxy-IMG.png' /></CarouselItem>
-          <CarouselItem><img className='carousel-img' src='/images/Proxy-IMG.png' /></CarouselItem>
-          <CarouselItem><img className='carousel-img' src='/images/Proxy-IMG.png' /></CarouselItem>
+          <CarouselItem><img alt='image01' className='carousel-img' src='/images/Proxy-IMG.png' /></CarouselItem>
+          <CarouselItem><img alt='image02' className='carousel-img' src='/images/Proxy-IMG.png' /></CarouselItem>
+          <CarouselItem><img alt='image03' className='carousel-img' src='/images/Proxy-IMG.png' /></CarouselItem>
         </Carousel>
       </div>
       <div className="button-buffer">
