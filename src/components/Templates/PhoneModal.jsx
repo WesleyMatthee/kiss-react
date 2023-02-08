@@ -38,5 +38,4 @@ export default function PhoneModal({ open, onClose }){
     </>,
     document.getElementById('portal')
   )
-
 } 

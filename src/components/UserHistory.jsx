@@ -26,6 +26,4 @@ export default function UserHistory() {
         })}
     </main>
   );
-
-
-}
+};
