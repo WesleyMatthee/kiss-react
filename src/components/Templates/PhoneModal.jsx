@@ -2,6 +2,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleXmark } from '@fortawesome/free-solid-svg-icons';
 import SwipeButton from 'react-swipezor';
+// import Swipeable from 'react-swipeable';
 import  ReactDom  from 'react-dom';
 import React, { useState } from 'react';
 import './PhoneModal.css';
@@ -18,14 +19,16 @@ export default function PhoneModal({ open, onClose }){
       <div className='dark-overlay'>
         <div className='phone-modal'>
           <FontAwesomeIcon icon={faCircleXmark} onClick={onClose} className="close-modal"/>
+         <div className="swipe-button">        
           <SwipeButton 
             mainText="Call 911" 
             overlayText="CALLING" 
             onSwipeDone={function () {
             console.log("Done!");
            }} 
-  reset={reset}
-/>
+            reset={reset}
+           />
+           </div> 
         </div>
         <button onClick={() => {
   setReset(counter => counter + 1)
