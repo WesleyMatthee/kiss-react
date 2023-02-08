@@ -8,8 +8,6 @@ export default function Nav() {
           <p>HOME PAGE</p>
         <output className='timer'>timer</output>
         </div>
-        
-
     </nav>
     )
 }
