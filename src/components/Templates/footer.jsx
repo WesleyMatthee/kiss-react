@@ -27,7 +27,7 @@ export default function Footer(props){
       </footer>
         <div className='phone-modal'>
          <PhoneModal open={isOpen} onClose={() => setIsOpen(false)} >
-            Call 911
+            
          </PhoneModal>
         </div>
     </>
