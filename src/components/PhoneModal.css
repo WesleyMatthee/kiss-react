@@ -1,0 +1,18 @@
+.phone-modal{
+  margin-top: 350px;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: aliceblue;
+  padding: '50px';
+  z-index: 1000;
+}
+
+.dark-overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .7);
+  z-index: 1000;
+}
