@@ -4,7 +4,7 @@ import { useState } from 'react';
 import './Home.css';
 
 
-export default function CPR(props) {
+export default function CPR() {
   // const navigate = useNavigate();
   const [selectedAge, setSelectedAge] = useState('');
 

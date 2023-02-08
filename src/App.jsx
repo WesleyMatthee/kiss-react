@@ -10,6 +10,7 @@ import { CarouselItem } from "./components/CarouselItem";
 import ErrorPage from "./error-page"
 import StartMonitorTimer from "./components/StartMonitorTimer";
 import MonitorButton from "./components/MonitorButton";
+import Monitor from "./components/Monitor";
 
 
 
@@ -34,7 +35,7 @@ export default function App() {
         <Route path="/" element={<Home />} errorElement={<ErrorPage />} />
         <Route path="/CPR" element={<CPR />} errorElement={<ErrorPage />} />
         <Route path="/choking" element={<Choking />} errorElement={<ErrorPage />} />
-        
+        <Route path="/monitor" element={<Monitor />} errorElement={<ErrorPage />} />
       </Routes>
       <Footer />
     </>
