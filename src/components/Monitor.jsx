@@ -9,8 +9,7 @@ import ExtraNotes from './subMonitor/ExtraNotes';
 
 
 
-export default function Monitor() {
-  const [selectedMonitor, setSelectedMonitor] = useState(0);
+export default function Monitor({setSelectedMonitor, selectedMonitor}) {
 
 
     return (
