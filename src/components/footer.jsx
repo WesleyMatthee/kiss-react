@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+
 import './footer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHouse } from '@fortawesome/free-solid-svg-icons'
@@ -21,11 +21,11 @@ export default function Footer(props){
          <FontAwesomeIcon icon={faHouse} onClick={() => navigate("/")} className="footer-icon"/>
          <FontAwesomeIcon icon={faChartSimple} className="footer-icon"/>
          <FontAwesomeIcon icon={faUser} className="footer-icon"/>
-         <FontAwesomeIcon icon={faPhone} onClick={ () => PhoneModal } className="footer-phone"/>
+         <FontAwesomeIcon icon={faPhone} onClick={ () => setIsOpen(true) } className="footer-phone"/>
        </div>
       </footer>
         <div>
-         <PhoneModal>
+         <PhoneModal open={isOpen} onClose={() => setIsOpen(false)} >
             Call 911
          </PhoneModal>
         </div>
