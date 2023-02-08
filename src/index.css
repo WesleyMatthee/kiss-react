@@ -14,3 +14,50 @@ code {
     monospace;
 }
 
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.emergencies-button{
+  display: flex;
+  flex-direction: column;
+}
+
+.container button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  background-color: #FF6262;
+}
+
+.button-buffer{
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.button-buffer button{
+  display: block;
+  width: 50%;
+}
+
+.start-button{
+  background-color: rgb(22, 153, 22);
+}
+
+.monitor-button{
+  background-color: cornflowerblue;
+}
+
+.start-timer{
+  background-color: rgb(22, 153, 22);
+}

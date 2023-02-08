@@ -1,11 +1,9 @@
-// import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 
-import './Home.css';
+import '../index.css'
 
 
 export default function CPR() {
-  // const navigate = useNavigate();
   const [selectedAge, setSelectedAge] = useState('');
 
   if (!selectedAge) {
@@ -64,6 +62,5 @@ export default function CPR() {
         </ol>
       </section>
     );
-
   }
 };

@@ -1,11 +1,9 @@
-// import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 
-import './Home.css';
+import '../index.css'
 
 
-export default function Choking(props) {
-  // const navigate = useNavigate();
+export default function Choking() {
   const [selectedAge, setSelectedAge] = useState('');
 
   if (!selectedAge) {

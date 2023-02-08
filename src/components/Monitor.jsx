@@ -1,14 +1,15 @@
 import { useState } from 'react';
 
-import './Home.css';
-import Pulse from './Pulse';
-import Respirations from './Respirations';
-import SkinCondition from './SkinCondition';
+import '../index.css'
+import Pulse from './subMonitor/Pulse';
+import Respirations from './subMonitor/Respirations';
+import SkinCondition from './subMonitor/SkinCondition';
+import Pearl from './subMonitor/Pearl';
+import ExtraNotes from './subMonitor/ExtraNotes';
 
 
 
 export default function Monitor() {
-  // const navigate = useNavigate();
   const [selectedMonitor, setSelectedMonitor] = useState(0);
 
 
@@ -34,12 +35,12 @@ export default function Monitor() {
       {selectedMonitor === 3 &&
       <SkinCondition setSelectedMonitor={setSelectedMonitor}/>
       }
-      {/* {selectedMonitor === 4 &&
+      {selectedMonitor === 4 &&
       <Pearl setSelectedMonitor={setSelectedMonitor}/>
       }
       {selectedMonitor === 5 &&
       <ExtraNotes setSelectedMonitor={setSelectedMonitor}/>
-      } */}
+      }
       </>
  
       )

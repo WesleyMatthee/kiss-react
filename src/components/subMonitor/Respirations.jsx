@@ -1,4 +1,4 @@
-import './Home.css';
+import '../../index.css'
 
 
 export default function Respirations(props) {

@@ -1,4 +1,4 @@
-import './Home.css';
+import '../../index.css'
 
 
 export default function SkinCondition(props) {
@@ -18,7 +18,6 @@ export default function SkinCondition(props) {
       <form><input type="text" /> <button className='submit-button' type="submit"></button> </form>
       <button className='back-monitor' onClick={() => setSelectedMonitor(2)}>BACK</button>
       <button className='next-monitor' onClick={() => setSelectedMonitor(4)}>NEXT</button>
-
 
     </main>
   );
