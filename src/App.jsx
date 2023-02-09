@@ -16,10 +16,16 @@ import Monitor from "./components/Monitor";
 
 export default function App() {
   const [selectedMonitor, setSelectedMonitor] = useState(0);
+  const [isActive, setIsActive] = useState(false);
+  const [seconds, setSeconds] = useState(0);
 
   return (
     <>
-      <Nav />
+      <Nav 
+      isActive={isActive}
+      seconds={seconds}
+      setSeconds={setSeconds}
+      />
       <div className='carousel-wrapper'>
         <Carousel>
           <CarouselItem><img alt='image01' className='carousel-img' src='/images/Proxy-IMG.png' /></CarouselItem>
@@ -32,9 +38,9 @@ export default function App() {
         <MonitorButton setSelectedMonitor={setSelectedMonitor} selectedMonitor={selectedMonitor}/>
       </div>
       <Routes>
-        <Route path="/" element={<Home />} errorElement={<ErrorPage />} />
-        <Route path="/CPR" element={<CPR />} errorElement={<ErrorPage />} />
-        <Route path="/choking" element={<Choking />} errorElement={<ErrorPage />} />
+        <Route path="/" element={<Home setIsActive={setIsActive}/>} errorElement={<ErrorPage />} />
+        <Route path="/CPR" element={<CPR setIsActive={setIsActive}/>} errorElement={<ErrorPage />} />
+        <Route path="/choking" element={<Choking setIsActive={setIsActive}/>} errorElement={<ErrorPage />} />
         <Route path="/monitor" element={<Monitor setSelectedMonitor={setSelectedMonitor} selectedMonitor={selectedMonitor}/>} errorElement={<ErrorPage />} />
       </Routes>
       <Footer />

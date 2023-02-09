@@ -1,4 +1,3 @@
-
 import './footer.css'
 import './PhoneModal.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -12,14 +11,15 @@ import React, { useState } from 'react';
 
 
 export default function Footer(props){
-  const [isOpen, setIsOpen] = useState(false) 
+  const [isOpen, setIsOpen] = useState(false)
+  const [isActive, setIsActive] = useState(false);
   const navigate = useNavigate();
 
   return (
     <>
       <footer className="footer">
        <div>
-         <FontAwesomeIcon icon={faHouse} onClick={() => navigate("/")} className="footer-icon"/>
+         <FontAwesomeIcon icon={faHouse} onClick={() => {navigate("/"); setIsActive()}} className="footer-icon"/>
          <FontAwesomeIcon icon={faChartSimple} className="footer-icon"/>
          <FontAwesomeIcon icon={faUser} className="footer-icon"/>
          <FontAwesomeIcon icon={faPhone} onClick={ () => setIsOpen(true) } className="footer-phone"/>
