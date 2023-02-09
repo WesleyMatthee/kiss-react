@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Nav from "./components/Templates/nav";
 import Footer from "./components/Templates/footer";
 import Home from "./components/Home";
-import CPR from "./components/cpr";
+import CPR from "./components/Cpr";
 import Choking from "./components/Choking";
 import Carousel from "./components/Templates/Carousel";
 import { CarouselItem } from "./components/Templates/CarouselItem";

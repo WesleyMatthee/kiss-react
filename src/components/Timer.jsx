@@ -11,7 +11,7 @@ export default function Timer ({ isActive, seconds, setSeconds }) {
           setSeconds((seconds) => seconds + 1);
         }, 1000);
       }
-      return () => {
+      if(!isActive){
         clearInterval(timer);
       };
     },[isActive, setSeconds]);

@@ -11,18 +11,18 @@ import React, { useState } from 'react';
 
 
 export default function Footer(props){
-  const [isOpen, setIsOpen] = useState(false)
-  const [isActive, setIsActive] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [isActive, setIsActive] = useState(true);
   const navigate = useNavigate();
 
   return (
     <>
       <footer className="footer">
        <div>
-         <FontAwesomeIcon icon={faHouse} onClick={() => {navigate("/"); setIsActive()}} className="footer-icon"/>
+         <FontAwesomeIcon icon={faHouse} onClick={() => {navigate("/"); setIsActive(false)}} className="footer-icon"/>
          <FontAwesomeIcon icon={faChartSimple} className="footer-icon"/>
          <FontAwesomeIcon icon={faUser} className="footer-icon"/>
-         <FontAwesomeIcon icon={faPhone} onClick={ () => setIsOpen(true) } className="footer-phone"/>
+         <FontAwesomeIcon icon={faPhone} onClick={() => setIsOpen(true) } className="footer-phone"/>
        </div>
       </footer>
         <div className='phone-modal'>
