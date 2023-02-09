@@ -14,7 +14,6 @@ import Monitor from "./components/Monitor";
 // import UserHistory from "./components/UserHistory";
 
 
-
 export default function App() {
   const [selectedMonitor, setSelectedMonitor] = useState(0);
 
