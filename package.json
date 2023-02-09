@@ -12,6 +12,7 @@
     "react-swipe-button": "^1.0.1",
     "react-swipeable": "^5.0.0",
     "react-swipezor": "^1.0.7",
+    "react-timer-hook": "^3.0.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

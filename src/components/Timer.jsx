@@ -1,26 +1,21 @@
 import React from "react";
-import { useEffect } from "react";
+import { useStopwatch } from "react-timer-hook";
 
-
-export default function Timer ({ isActive, seconds, setSeconds }) {
-  
-    useEffect(() => {
-      let timer = null;
-      if(isActive){
-        timer = setInterval(() => {
-          setSeconds((seconds) => seconds + 1);
-        }, 1000);
-      } else if (!isActive && seconds !== 0) {
-        clearInterval(timer);
-      }
-      return () => clearInterval(timer);
-    }, [isActive, setSeconds, seconds]);
-
-    return (
-      <div>
-        {seconds}s
+function MyStopwatch() {
+  const { seconds, minutes, hours } = useStopwatch({ autoStart: true });
+  return (
+    <div style={{ textAlign: "center" }}>
+      <div style={{ fontSize: "15px" }}>
+        <span>{hours}</span>:<span>{minutes}</span>:<span>{seconds}</span>
       </div>
-    );
-  }; 
+    </div>
+  );
+}
 
- 
+export default function Timer({ isActive, seconds, setSeconds }) {
+  return (
+    <div>
+      <MyStopwatch />
+    </div>
+  );
+}
