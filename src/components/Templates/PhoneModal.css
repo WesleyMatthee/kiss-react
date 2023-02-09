@@ -1,16 +1,16 @@
-.phone-modal{
+.phone-modal {
   margin-top: 350px;
   margin-left: 50px;
   margin-right: 50px;
   z-index: 1000;
 }
 
-.close-modal{
+.close-modal {
   background-color: none;
   z-index: 1000;
 }
 
-.dark-overlay{
+.dark-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -20,7 +20,12 @@
   z-index: 1000;
 }
 
-.swipe-button{
-  background-color: aliceblue;
-  width: 300px;
+.swipe-button {
+  margin-left: 50px;
+  text-align: center;
+  width: 250px;
+  font-size: 30;
+  font-family: 'Roboto', sans-serif, 'Source Sans Pro',
+    sans-serif;
+
 }
