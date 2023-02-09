@@ -6,8 +6,6 @@ import React from 'react';
 export default function Home({ setIsActive }) {
   const navigate = useNavigate();
 
-
-
   return (
     <main className='Root'>
 

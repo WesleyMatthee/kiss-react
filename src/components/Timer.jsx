@@ -10,14 +10,15 @@ export default function Timer ({ isActive, seconds, setSeconds }) {
         timer = setInterval(() => {
           setSeconds((seconds) => seconds + 1);
         }, 1000);
-      }
-      if(!isActive){
+      } else if (!isActive && seconds !== 0) {
         clearInterval(timer);
-      };
-    },[isActive, setSeconds]);
+      }
+      return () => clearInterval(timer);
+    }, [isActive, setSeconds, seconds]);
+
     return (
       <div>
-        {seconds}
+        {seconds}s
       </div>
     );
   }; 
