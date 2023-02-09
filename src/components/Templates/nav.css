@@ -10,10 +10,14 @@ nav {
 }
 
 .white-logo {
+    padding-left: 5px;
+    padding-top: 5px;
     max-width: 40px;
+    max-height: 40px;
 }
 
 .timer {
+    padding-right: 5px;
     display: flex;
     align-items: flex-end;
 }
