@@ -9,6 +9,7 @@
     "react-dom": "^16.13.0",
     "react-router-dom": "^6.8.0",
     "react-scripts": "3.4.4",
+    "react-swipe-button": "^1.0.1",
     "react-swipeable": "^5.0.0",
     "react-swipezor": "^1.0.7",
     "web-vitals": "^2.1.4"
