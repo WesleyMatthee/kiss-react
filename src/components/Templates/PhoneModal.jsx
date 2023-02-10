@@ -1,8 +1,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleXmark } from '@fortawesome/free-solid-svg-icons';
-// import SwipeButton from 'react-swipezor';
+
 import ReactSwipeButton from 'react-swipe-button';
-import ReactDom from 'react-dom';
+import  ReactDom  from 'react-dom';
+
 import React from 'react';
 import './PhoneModal.css';
 
