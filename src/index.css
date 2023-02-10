@@ -23,6 +23,8 @@ code {
 .emergencies-button{
   display: flex;
   flex-direction: column;
+  padding-left: 0;
+  padding-top: 25px;
 }
 
 .container button{
