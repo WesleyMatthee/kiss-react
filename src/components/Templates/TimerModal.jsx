@@ -7,10 +7,24 @@ import './PhoneModal.css';
 
 export default function TimerModal({ open, onClose }) {
 	const [timer, setTimer] = useState(15);
+	const [isReset, setIsReset] = useState(false);
+
 	useEffect(() => {
 		const semicircles = document.querySelectorAll('.semicircle');
-		console.log(semicircles);
+		// console.log(semicircles);
+		if (semicircles.length > 0) {
+			// console.log('Hello: IS here, HERE?');
+			semicircles[0].style.display = 'block';
+			semicircles[1].style.display = 'block';
+			semicircles[2].style.display = 'block';
+		}
 
+		let sec = 1000;
+		let seconds = sec * 5;
+		let setTime = seconds;
+		let startTime = Date.now();
+		let futureTime = startTime + setTime;
+    
 		function countDownTimer() {
 			if (semicircles.length > 0) {
 				const currentTime = Date.now();
@@ -27,9 +41,8 @@ export default function TimerModal({ open, onClose }) {
 					semicircles[0].style.transform = `rotate(${angle}deg)`;
 					semicircles[1].style.transform = `rotate(${angle}deg)`;
 				}
-				//timer
-				//5 second condition
-				if (remainingTime < 0) {
+
+				if (remainingTime <= 0) {
 					setTimer(false);
 					semicircles[0].style.display = 'none';
 					semicircles[1].style.display = 'none';
@@ -42,17 +55,9 @@ export default function TimerModal({ open, onClose }) {
 		return () => {
 			clearInterval(timerLoop);
 		};
-	}, [open]);
+	}, [open, isReset]);
 
 	if (!open) return null;
-
-	//Timer Logic
-
-	const sec = 1000;
-	const seconds = sec * 5;
-	const setTime = seconds;
-	const startTime = Date.now();
-	const futureTime = startTime + setTime;
 
 	return ReactDom.createPortal(
 		<>
@@ -65,7 +70,15 @@ export default function TimerModal({ open, onClose }) {
 					/>
 				</div>
 				<h1 className='timer-numbers'>{Math.round(timer / 1000)}</h1>
-				{timer > 0 ? null : <button>reset</button>}
+				{timer > 0 ? null : (
+					<button
+						onClick={() => {
+							setIsReset(!isReset);
+						}}
+					>
+						reset
+					</button>
+				)}
 				<div className='main-container center'>
 					{/* progress indicator */}
 					<div className='circle-container center'>

@@ -8,12 +8,12 @@
 
 .timer-numbers {
   font-family: oswald;
-  font-size: 50px;
+  font-size: 75px;
   color: aliceblue;
   display: flex;
   justify-content: center;
   align-items: center;
-    z-index: 1000;
+  z-index: 1000;
 }
 
 .center {
@@ -25,14 +25,12 @@
 .main-container {
   width: 393px;
   height: 272px;
-  background-color: orange;
-  background-color: white;
 }
 
 .circle-container {
   width: 200px;
   height: 200px;
-  background-color: white;
+  /* background-color: white; */
   background-color: #ddd;
   border-radius: 50%;
   position: absolute;
@@ -75,7 +73,7 @@
 }
 
 /* Hover for testing */
-.main-container:hover .semicircle:nth-child(1) {
+/* .main-container:hover .semicircle:nth-child(1) {
   transform: rotate(180deg);
   transition: 1s linear;
 }
@@ -88,4 +86,4 @@
 .main-container:hover .semicircle:nth-child(3) {
 opacity: 0;
   transition: opacity 0s 1s; 
-}
+} */
