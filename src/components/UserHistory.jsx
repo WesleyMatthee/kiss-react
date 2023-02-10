@@ -29,7 +29,7 @@ return (
    <main>
    <section className="incidents">
         {userHistory[0] && userHistory[0].incidents.map(incident => (
-         <p key={incident.id}>Location: {incident.location} Duration: {incident.incident_duration}</p>
+         <p key={incident.id}>Location: {incident.location} Duration: {incident.incident_duration} Age: {incident.age_stage}</p>
         ))}
       </section>
 
@@ -46,7 +46,7 @@ return (
            {userHistory[2] && userHistory[2].map((vital) => {
                return (
                  <div>
-                   <p className="vitals">{vital.pulse}</p>
+                   <p className="vitals">Pulse: {vital.pulse} Respirations: {vital.respiration} Skin: {vital.skin_condition} Pearl: {vital.pearl} Extra-notes: {vital.extra_notes}</p>
                    </div>
                )
            })}
