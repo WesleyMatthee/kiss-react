@@ -17,6 +17,9 @@ export default function App() {
 	const [selectedMonitor, setSelectedMonitor] = useState(0);
 	const [isActive, setIsActive] = useState(false);
 	const [seconds, setSeconds] = useState(0);
+	const [isInfant, setIsInfant] = useState(false);
+	const [isChild, setIsChild] = useState(false);
+	const [isAdult, setIsAdult] = useState(false);
 
 	return (
 		<>
