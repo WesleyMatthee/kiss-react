@@ -20,11 +20,11 @@ export default function App() {
 	const [isInfant, setIsInfant] = useState(false);
 	const [isChild, setIsChild] = useState(false);
 	const [isAdult, setIsAdult] = useState(false);
+	const [isHome, setIsHome] = useState(true);
 
-	return (
-		<>
-			<Nav isActive={isActive} seconds={seconds} setSeconds={setSeconds} />
-			<div className='carousel-wrapper'>
+	const getCarouselItems = () => {
+		if (isAdult) {
+			return (
 				<Carousel>
 					<CarouselItem>
 						<img
@@ -48,7 +48,92 @@ export default function App() {
 						/>
 					</CarouselItem>
 				</Carousel>
-			</div>
+			);
+		} else if (isChild) {
+			return (
+				<Carousel>
+					<CarouselItem>
+						<img
+							alt='image01'
+							className='carousel-img'
+							src='/images/cpr_child_01.png'
+						/>
+					</CarouselItem>
+					<CarouselItem>
+						<img
+							alt='image02'
+							className='carousel-img'
+							src='/images/cpr_child_02.png'
+						/>
+					</CarouselItem>
+					<CarouselItem>
+						<img
+							alt='image03'
+							className='carousel-img'
+							src='/images/cpr_child_03.png'
+						/>
+					</CarouselItem>
+				</Carousel>
+			);
+		} else if (isInfant) {
+			return (
+				<Carousel>
+					<CarouselItem>
+						<img
+							alt='image01'
+							className='carousel-img'
+							src='/images/cpr_infant_01.png'
+						/>
+					</CarouselItem>
+					<CarouselItem>
+						<img
+							alt='image02'
+							className='carousel-img'
+							src='/images/cpr_infant_02.png'
+						/>
+					</CarouselItem>
+					<CarouselItem>
+						<img
+							alt='image03'
+							className='carousel-img'
+							src='/images/cpr_infant_03.png'
+						/>
+					</CarouselItem>
+				</Carousel>
+			);
+		} else if (isHome) {
+			return (
+				<Carousel>
+					<CarouselItem>
+						<img
+							alt='image01'
+							className='carousel-img'
+							src='/images/cpr_01.png'
+						/>
+					</CarouselItem>
+					<CarouselItem>
+						<img
+							alt='image02'
+							className='carousel-img'
+							src='/images/cpr_02.png'
+						/>
+					</CarouselItem>
+					<CarouselItem>
+						<img
+							alt='image03'
+							className='carousel-img'
+							src='/images/cpr_03.png'
+						/>
+					</CarouselItem>
+				</Carousel>
+			);
+		}
+	};
+
+	return (
+		<>
+			<Nav isActive={isActive} seconds={seconds} setSeconds={setSeconds} />
+			<div className='carousel-wrapper'>{getCarouselItems()}</div>
 			<div className='button-buffer'>
 				<StartTimer />
 				<MonitorButton
@@ -64,7 +149,14 @@ export default function App() {
 				/>
 				<Route
 					path='/CPR'
-					element={<CPR setIsActive={setIsActive} />}
+					element={
+						<CPR
+							setIsActive={setIsActive}
+							setIsAdult={setIsAdult}
+							setIsChild={setIsChild}
+							setIsInfant={setIsInfant}
+						/>
+					}
 					errorElement={<ErrorPage />}
 				/>
 				<Route
@@ -83,7 +175,12 @@ export default function App() {
 					errorElement={<ErrorPage />}
 				/>
 			</Routes>
-			<Footer />
+			<Footer
+				setIsHome={setIsHome}
+				setIsAdult={setIsAdult}
+				setIsChild={setIsChild}
+				setIsInfant={setIsInfant}
+			/>
 		</>
 	);
 }

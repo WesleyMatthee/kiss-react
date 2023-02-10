@@ -2,20 +2,33 @@ import React, { useState } from 'react';
 
 import '../index.css';
 
-export default function CPR() {
+export default function CPR({ setIsAdult, setIsChild, setIsInfant }) {
 	const [selectedAge, setSelectedAge] = useState('');
 
+	//Functions for onClick
+	function setAdultClick() {
+		setSelectedAge('Adult');
+		setIsAdult(true);
+	}
+	function setChildClick() {
+		setSelectedAge('Child');
+		setIsChild(true);
+	}
+	function setInfantClick() {
+		setSelectedAge('Infant');
+		setIsInfant(true);
+	}
 	if (!selectedAge) {
 		return (
 			<section className='container'>
 				<ul className='emergencies-button'>
-					<button type='button' onClick={() => setSelectedAge('Adult')}>
+					<button type='button' onClick={() => setAdultClick()}>
 						Adult 15yrs +
 					</button>
-					<button type='button' onClick={() => setSelectedAge('Child')}>
+					<button type='button' onClick={() => setChildClick()}>
 						Child 2-15yrs
 					</button>
-					<button type='button' onClick={() => setSelectedAge('Infant')}>
+					<button type='button' onClick={() => setInfantClick()}>
 						Infant -2yrs
 					</button>
 				</ul>
