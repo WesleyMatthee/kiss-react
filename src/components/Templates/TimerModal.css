@@ -1,15 +1,24 @@
-.close-modal {
-  margin-top: 50px;
-  margin-left: 50px;
-  margin-right: 50px;
+.timer-icons {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+
+}
+
+.timer-icon {
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 0.5em 0.6em;
   z-index: 1000;
-  color: aliceblue;
+  color: #6598BD;
 }
 
 .timer-numbers {
   font-family: oswald;
   font-size: 75px;
-  color: aliceblue;
+  color: #6598BD;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,7 +33,8 @@
 
 .main-container {
   width: 393px;
-  height: 272px;
+  height: 220px;
+  padding-top: 50px;
 }
 
 .circle-container {
@@ -48,12 +58,12 @@
 }
 .semicircle:nth-child(1){
   /* background-color: red; */
-  background-color: #088b8b;
+  background-color: #6598BD;
   z-index: 2;
 }
 .semicircle:nth-child(2){
   /* background-color: blue; */
-  background-color: #088b8b;
+  background-color: #6598BD;
   z-index: 3;
 }
 .semicircle:nth-child(3){
