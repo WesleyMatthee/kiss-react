@@ -24,7 +24,7 @@ export default function Footer(props) {
 						onClick={() => navigate('/')}
 						className='footer-icon'
 					/>
-					<FontAwesomeIcon icon={faChartSimple} className='footer-icon' />
+					<FontAwesomeIcon icon={faChartSimple} onClick={() => navigate('/report')} className='footer-icon' />
 					<FontAwesomeIcon icon={faUser} className='footer-icon' />
 					<FontAwesomeIcon
 						icon={faPhone}
