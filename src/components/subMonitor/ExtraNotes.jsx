@@ -13,7 +13,9 @@ export default function ExtraNotes(props) {
 			</section>
 			<form>
 				<input type='text' />{' '}
-				<button className='submit-button' type='submit'></button>{' '}
+				<button className='submit-button' type='submit'>
+					Submit
+				</button>{' '}
 			</form>
 			<button className='back-monitor' onClick={() => setSelectedMonitor(4)}>
 				BACK
