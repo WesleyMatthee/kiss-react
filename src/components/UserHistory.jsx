@@ -5,7 +5,7 @@ export default function UserHistory() {
 
   const [userHistory, setUserHistory] = useState([]);
   useEffect(() => {
-     fetch('http://localhost:3000/users')
+     fetch('http://localhost:3000/users/1')
         .then((response) => response.json())
         .then((users) => {
            console.log(users);
@@ -16,12 +16,39 @@ export default function UserHistory() {
         });
   }, []);
 
+  useEffect(() => {
+    fetch('http://localhost:3000/incidents/1')
+       .then((response) => response.json())
+       .then((users) => {
+          console.log(users);
+          setUserHistory(users);
+       })
+       .catch((err) => {
+          console.log(err.message);
+       });
+ }, []);
+
+ useEffect(() => {
+   fetch('http://localhost:3000/incident_types')
+      .then((response) => response.json())
+      .then((users) => {
+         console.log(users);
+         setUserHistory(users);
+      })
+      .catch((err) => {
+         console.log(err.message);
+      });
+}, []);
+
 
   return (
     <main>
-        {userHistory.map((user) => {
+        {userHistory.incidents && userHistory.incidents.map((incident) => {
             return (
-                <p className="user">{user.username}</p>
+              <div>
+                <p className="user">{incident.location}</p>
+                <p className="user">{incident.age_stage}</p>
+                </div>
             )
         })}
     </main>

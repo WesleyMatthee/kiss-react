@@ -11,6 +11,7 @@ import ErrorPage from "./error-page";
 import StartTimer from "./components/Templates/StartTimer";
 import MonitorButton from "./components/Templates/MonitorButton";
 import Monitor from "./components/Monitor";
+import UserHistory from "./components/UserHistory";
 // import UserHistory from "./components/UserHistory";
 
 
@@ -18,7 +19,7 @@ export default function App() {
   const [selectedMonitor, setSelectedMonitor] = useState(0);
   const [isActive, setIsActive] = useState(false);
   const [seconds, setSeconds] = useState(0);
-  
+  const [userHistory, setUserHistory] = useState([]);
 
   return (
     <>
@@ -44,6 +45,7 @@ export default function App() {
         <Route path="/choking" element={<Choking setIsActive={setIsActive}/>} errorElement={<ErrorPage />} />
         <Route path="/monitor" element={<Monitor setSelectedMonitor={setSelectedMonitor} selectedMonitor={selectedMonitor}/>} errorElement={<ErrorPage />} />
       </Routes>
+      <UserHistory/>
       <Footer />
     </>
   )
