@@ -27,6 +27,7 @@ code {
 
 .container button{
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding-bottom: 15px;
@@ -35,6 +36,7 @@ code {
   padding-right: 100px;
   margin-bottom: 15px;
   border-radius: 12px;
+  border-color: transparent;
   background-color: #FF6262;
 }
 
