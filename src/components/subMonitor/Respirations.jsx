@@ -2,7 +2,8 @@ import '../../index.css';
 import React from 'react';
 
 export default function Respirations(props) {
-	const { setSelectedMonitor } = props;
+	const { setSelectedMonitor, setIsPulse, setIsSkinCon, setIsRespirations } =
+		props;
 
 	return (
 		<main className='Monitor'>
@@ -27,10 +28,24 @@ export default function Respirations(props) {
 					Submit
 				</button>{' '}
 			</form>
-			<button className='back-monitor' onClick={() => setSelectedMonitor(1)}>
+			<button
+				className='back-monitor'
+				onClick={() => {
+					setSelectedMonitor(1);
+					setIsPulse(true);
+					setIsRespirations(false);
+				}}
+			>
 				BACK
 			</button>
-			<button className='next-monitor' onClick={() => setSelectedMonitor(3)}>
+			<button
+				className='next-monitor'
+				onClick={() => {
+					setSelectedMonitor(3);
+					setIsSkinCon(true);
+					setIsRespirations(false);
+				}}
+			>
 				NEXT
 			</button>
 		</main>

@@ -20,6 +20,10 @@ export default function App() {
 	const [isInfant, setIsInfant] = useState(false);
 	const [isChild, setIsChild] = useState(false);
 	const [isAdult, setIsAdult] = useState(false);
+	const [isPulse, setIsPulse] = useState(false);
+	const [isRespirations, setIsRespirations] = useState(false);
+	const [isSkinCon, setIsSkinCon] = useState(false);
+	const [isPupils, setIsPupils] = useState(false);
 	const [isHome, setIsHome] = useState(true);
 
 	const getCarouselItems = () => {
@@ -101,6 +105,61 @@ export default function App() {
 					</CarouselItem>
 				</Carousel>
 			);
+		} else if (isPulse) {
+			return (
+				<Carousel>
+					<CarouselItem>
+						<img
+							alt='image01'
+							className='carousel-img'
+							src='/images/monitor_pulse_radial.png'
+						/>
+					</CarouselItem>
+					<CarouselItem>
+						<img
+							alt='image02'
+							className='carousel-img'
+							src='/images/monitor_pulse_carotid.png'
+						/>
+					</CarouselItem>
+				</Carousel>
+			);
+		} else if (isRespirations) {
+			return (
+				<Carousel>
+					<CarouselItem>
+						<img
+							alt='image01'
+							className='carousel-img'
+							src='/images/monitor_breathing.png'
+						/>
+					</CarouselItem>
+				</Carousel>
+			);
+		} else if (isSkinCon) {
+			return (
+				<Carousel>
+					<CarouselItem>
+						<img
+							alt='image01'
+							className='carousel-img'
+							src='/images/monitor_temp.png'
+						/>
+					</CarouselItem>
+				</Carousel>
+			);
+		} else if (isPupils) {
+			return (
+				<Carousel>
+					<CarouselItem>
+						<img
+							alt='image01'
+							className='carousel-img'
+							src='/images/monitor_pupils.png'
+						/>
+					</CarouselItem>
+				</Carousel>
+			);
 		} else if (isHome) {
 			return (
 				<Carousel>
@@ -168,6 +227,10 @@ export default function App() {
 					path='/monitor'
 					element={
 						<Monitor
+							setIsPulse={setIsPulse}
+							setIsRespirations={setIsRespirations}
+							setIsSkinCon={setIsSkinCon}
+							setIsPupils={setIsPupils}
 							setSelectedMonitor={setSelectedMonitor}
 							selectedMonitor={selectedMonitor}
 						/>
@@ -180,6 +243,10 @@ export default function App() {
 				setIsAdult={setIsAdult}
 				setIsChild={setIsChild}
 				setIsInfant={setIsInfant}
+				setIsPulse={setIsPulse}
+				setIsRespirations={setIsRespirations}
+				setIsSkinCon={setIsSkinCon}
+				setIsPupils={setIsPupils}
 			/>
 		</>
 	);
