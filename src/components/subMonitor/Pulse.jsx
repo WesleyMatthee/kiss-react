@@ -2,7 +2,7 @@ import '../../index.css';
 import React from 'react';
 
 export default function Pulse(props) {
-	const { setSelectedMonitor } = props;
+	const { setSelectedMonitor, setIsPulse, setIsRespirations } = props;
 
 	return (
 		<main className='Monitor'>
@@ -29,7 +29,14 @@ export default function Pulse(props) {
 					Submit
 				</button>{' '}
 			</form>
-			<button className='next-monitor' onClick={() => setSelectedMonitor(2)}>
+			<button
+				className='next-monitor'
+				onClick={() => {
+					setSelectedMonitor(2);
+					setIsRespirations(true);
+					setIsPulse(false);
+				}}
+			>
 				NEXT
 			</button>
 		</main>

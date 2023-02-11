@@ -2,7 +2,7 @@ import '../../index.css';
 import React from 'react';
 
 export default function Pearl(props) {
-	const { setSelectedMonitor } = props;
+	const { setSelectedMonitor, setIsSkinCon, setIsPupils, setIsHome } = props;
 
 	return (
 		<main className='Monitor'>
@@ -29,10 +29,24 @@ export default function Pearl(props) {
 					Submit
 				</button>{' '}
 			</form>
-			<button className='back-monitor' onClick={() => setSelectedMonitor(3)}>
+			<button
+				className='back-monitor'
+				onClick={() => {
+					setSelectedMonitor(3);
+					setIsSkinCon(true);
+					setIsPupils(false);
+				}}
+			>
 				BACK
 			</button>
-			<button className='next-monitor' onClick={() => setSelectedMonitor(5)}>
+			<button
+				className='next-monitor'
+				onClick={() => {
+					setSelectedMonitor(5);
+					setIsPupils(false);
+					setIsHome(true);
+				}}
+			>
 				NEXT
 			</button>
 		</main>

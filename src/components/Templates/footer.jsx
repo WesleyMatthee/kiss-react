@@ -15,6 +15,10 @@ export default function Footer({
 	setIsAdult,
 	setIsChild,
 	setIsInfant,
+	setIsPulse,
+	setIsRespirations,
+	setIsSkinCon,
+	setIsPupils
 }) {
 	const [isOpen, setIsOpen] = useState(false);
 	const navigate = useNavigate();
@@ -25,6 +29,10 @@ export default function Footer({
 		setIsAdult(false);
 		setIsChild(false);
 		setIsInfant(false);
+		setIsPulse(false);
+		setIsRespirations(false);
+		setIsSkinCon(false);
+		setIsPupils(false);
 	}
 	return (
 		<>
@@ -35,7 +43,11 @@ export default function Footer({
 						onClick={() => setHomeBtn()}
 						className='footer-icon'
 					/>
-					<FontAwesomeIcon icon={faChartSimple} onClick={() => navigate('/report')} className='footer-icon' />
+					<FontAwesomeIcon
+						icon={faChartSimple}
+						onClick={() => navigate('/report')}
+						className='footer-icon'
+					/>
 					<FontAwesomeIcon icon={faUser} className='footer-icon' />
 					<FontAwesomeIcon
 						icon={faPhone}
