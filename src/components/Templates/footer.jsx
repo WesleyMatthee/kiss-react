@@ -48,7 +48,9 @@ export default function Footer({
 						onClick={() => navigate('/report')}
 						className='footer-icon'
 					/>
-					<FontAwesomeIcon icon={faUser} className='footer-icon' />
+					<FontAwesomeIcon icon={faUser} 
+					onClick={() => navigate('/profile')}
+					className='footer-icon' />
 					<FontAwesomeIcon
 						icon={faPhone}
 						onClick={() => setIsOpen(true)}

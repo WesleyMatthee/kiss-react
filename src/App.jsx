@@ -13,6 +13,7 @@ import MonitorButton from "./components/Templates/MonitorButton";
 import Monitor from "./components/Monitor";
 import Report from "./components/Report";
 import Vital from "./components/Vital";
+import Profile from "./components/Profile";
 
 export default function App() {
 	const [selectedMonitor, setSelectedMonitor] = useState(0);
@@ -247,6 +248,11 @@ export default function App() {
 				<Route
 					path='/vital'
 					element={<Vital setIsActive={setIsActive} />}
+					errorElement={<ErrorPage />}
+				/>
+				<Route
+					path='/profile'
+					element={<Profile setIsActive={setIsActive} />}
 					errorElement={<ErrorPage />}
 				/>
 			</Routes>
