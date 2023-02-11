@@ -1,17 +1,17 @@
-import { Route, Routes } from 'react-router-dom';
-import React, { useState } from 'react';
-import Nav from './components/Templates/nav';
-import Footer from './components/Templates/footer';
-import Home from './components/Home';
-import CPR from './components/Cpr';
-import Choking from './components/Choking';
-import Carousel from './components/Templates/Carousel';
-import { CarouselItem } from './components/Templates/CarouselItem';
-import ErrorPage from './error-page';
-import StartTimer from './components/Templates/StartTimer';
-import MonitorButton from './components/Templates/MonitorButton';
-import Monitor from './components/Monitor';
-// import UserHistory from "./components/UserHistory";
+import { Route, Routes } from "react-router-dom";
+import React, { useState } from "react";
+import Nav from "./components/Templates/nav";
+import Footer from "./components/Templates/footer";
+import Home from "./components/Home";
+import CPR from "./components/Cpr";
+import Choking from "./components/Choking";
+import Carousel from "./components/Templates/Carousel";
+import { CarouselItem } from "./components/Templates/CarouselItem";
+import ErrorPage from "./error-page";
+import StartTimer from "./components/Templates/StartTimer";
+import MonitorButton from "./components/Templates/MonitorButton";
+import Monitor from "./components/Monitor";
+import Report from "./components/Report";
 
 export default function App() {
 	const [selectedMonitor, setSelectedMonitor] = useState(0);
