@@ -12,6 +12,7 @@ import StartTimer from "./components/Templates/StartTimer";
 import MonitorButton from "./components/Templates/MonitorButton";
 import Monitor from "./components/Monitor";
 import Report from "./components/Report";
+import Vital from "./components/Vital";
 
 export default function App() {
 	const [selectedMonitor, setSelectedMonitor] = useState(0);
@@ -236,6 +237,16 @@ export default function App() {
 							setIsHome={setIsHome}
 						/>
 					}
+					errorElement={<ErrorPage />}
+				/>
+				<Route
+					path='/report'
+					element={<Report setIsActive={setIsActive} />}
+					errorElement={<ErrorPage />}
+				/>
+				<Route
+					path='/vital'
+					element={<Vital setIsActive={setIsActive} />}
 					errorElement={<ErrorPage />}
 				/>
 			</Routes>
