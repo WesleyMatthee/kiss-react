@@ -174,14 +174,14 @@ export default function App() {
 						<img
 							alt='image02'
 							className='carousel-img'
-							src='/images/Xkiss.png'
+							src='/images/keep_calm.png'
 						/>
 					</CarouselItem>
 					<CarouselItem>
 						<img
 							alt='image03'
 							className='carousel-img'
-							src='/images/Xkiss.png'
+							src='/images/keep_it_simple.png'
 						/>
 					</CarouselItem>
 				</Carousel>
