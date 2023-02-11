@@ -2,7 +2,8 @@ import '../../index.css';
 import React from 'react';
 
 export default function SkinCondition(props) {
-	const { setSelectedMonitor } = props;
+	const { setSelectedMonitor, setIsRespirations, setIsPupils, setIsSkinCon } =
+		props;
 
 	return (
 		<main className='Monitor'>
@@ -21,10 +22,24 @@ export default function SkinCondition(props) {
 					Submit
 				</button>{' '}
 			</form>
-			<button className='back-monitor' onClick={() => setSelectedMonitor(2)}>
+			<button
+				className='back-monitor'
+				onClick={() => {
+					setSelectedMonitor(2);
+					setIsRespirations(true);
+					setIsSkinCon(false);
+				}}
+			>
 				BACK
 			</button>
-			<button className='next-monitor' onClick={() => setSelectedMonitor(4)}>
+			<button
+				className='next-monitor'
+				onClick={() => {
+					setSelectedMonitor(4);
+					setIsPupils(true);
+					setIsSkinCon(false);
+				}}
+			>
 				NEXT
 			</button>
 		</main>

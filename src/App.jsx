@@ -167,21 +167,21 @@ export default function App() {
 						<img
 							alt='image01'
 							className='carousel-img'
-							src='/images/cpr_01.png'
+							src='/images/Xkiss.png'
 						/>
 					</CarouselItem>
 					<CarouselItem>
 						<img
 							alt='image02'
 							className='carousel-img'
-							src='/images/cpr_02.png'
+							src='/images/Xkiss.png'
 						/>
 					</CarouselItem>
 					<CarouselItem>
 						<img
 							alt='image03'
 							className='carousel-img'
-							src='/images/cpr_03.png'
+							src='/images/Xkiss.png'
 						/>
 					</CarouselItem>
 				</Carousel>
@@ -233,6 +233,7 @@ export default function App() {
 							setIsPupils={setIsPupils}
 							setSelectedMonitor={setSelectedMonitor}
 							selectedMonitor={selectedMonitor}
+							setIsHome={setIsHome}
 						/>
 					}
 					errorElement={<ErrorPage />}

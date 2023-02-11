@@ -7,6 +7,7 @@ import Pearl from './subMonitor/Pearl';
 import ExtraNotes from './subMonitor/ExtraNotes';
 
 export default function Monitor({
+	setIsHome,
 	setSelectedMonitor,
 	selectedMonitor,
 	setIsPulse,
@@ -31,6 +32,11 @@ export default function Monitor({
 		setSelectedMonitor(4);
 		setIsPupils(true);
 	}
+	function setSelectedMonitorHome() {
+		setSelectedMonitor(5);
+		setIsHome(true);
+	}
+
 	return (
 		<>
 			{selectedMonitor === 0 && (
@@ -51,7 +57,7 @@ export default function Monitor({
 						<button type='button' onClick={() => setSelectedMonitorPupils()}>
 							Pupils
 						</button>
-						<button type='button' onClick={() => setSelectedMonitor(5)}>
+						<button type='button' onClick={() => setSelectedMonitorHome()}>
 							Extra Notes
 						</button>
 					</ul>
@@ -73,13 +79,27 @@ export default function Monitor({
 				/>
 			)}
 			{selectedMonitor === 3 && (
-				<SkinCondition setSelectedMonitor={setSelectedMonitor} />
+				<SkinCondition
+					setSelectedMonitor={setSelectedMonitor}
+					setIsPupils={setIsPupils}
+					setIsSkinCon={setIsSkinCon}
+					setIsRespirations={setIsRespirations}
+				/>
 			)}
 			{selectedMonitor === 4 && (
-				<Pearl setSelectedMonitor={setSelectedMonitor} />
+				<Pearl
+					setSelectedMonitor={setSelectedMonitor}
+					setIsPupils={setIsPupils}
+					setIsSkinCon={setIsSkinCon}
+					setIsHome={setIsHome}
+				/>
 			)}
 			{selectedMonitor === 5 && (
-				<ExtraNotes setSelectedMonitor={setSelectedMonitor} />
+				<ExtraNotes
+					setSelectedMonitor={setSelectedMonitor}
+					setIsHome={setIsHome}
+					setIsPupils={setIsPupils}
+				/>
 			)}
 		</>
 	);
