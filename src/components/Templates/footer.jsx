@@ -1,4 +1,3 @@
-
 import './footer.css';
 import './PhoneModal.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -11,20 +10,44 @@ import PhoneModal from './PhoneModal';
 
 import React, { useState } from 'react';
 
-export default function Footer(props) {
+export default function Footer({
+	setIsHome,
+	setIsAdult,
+	setIsChild,
+	setIsInfant,
+	setIsPulse,
+	setIsRespirations,
+	setIsSkinCon,
+	setIsPupils
+}) {
 	const [isOpen, setIsOpen] = useState(false);
 	const navigate = useNavigate();
 
+	function setHomeBtn() {
+		navigate('/');
+		setIsHome(true);
+		setIsAdult(false);
+		setIsChild(false);
+		setIsInfant(false);
+		setIsPulse(false);
+		setIsRespirations(false);
+		setIsSkinCon(false);
+		setIsPupils(false);
+	}
 	return (
 		<>
 			<footer className='footer'>
 				<div>
 					<FontAwesomeIcon
 						icon={faHouse}
-						onClick={() => navigate('/')}
+						onClick={() => setHomeBtn()}
 						className='footer-icon'
 					/>
-					<FontAwesomeIcon icon={faChartSimple} className='footer-icon' />
+					<FontAwesomeIcon
+						icon={faChartSimple}
+						onClick={() => navigate('/report')}
+						className='footer-icon'
+					/>
 					<FontAwesomeIcon icon={faUser} className='footer-icon' />
 					<FontAwesomeIcon
 						icon={faPhone}
