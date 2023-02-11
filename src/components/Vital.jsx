@@ -1,26 +1,23 @@
 import React from "react";
 import "../index.css";
-import { useState } from "react";
 
-export default function Report(props) {
-  const [selectIncident, setSelectIncident] = useState(false);
+export default function Vital () {
 
 
   return (
     <>
       <main className='Root'>
         <section className='container'>
-          <ul className='emergencies-button'>
-            <h1>Incidents</h1>
-            <tr>
-            <th>Type:</th>
-            <p> CPR </p>
-            </tr>
-            <tr>
-            <th>Date:</th>
-            <p>2023-02-16</p>
-            </tr>
-          </ul>
+        <ul>
+        <h3>CPR</h3>
+            <p>Location: Toronto</p>
+            <p>Date: 2023-02-16</p>
+            <p>Pulse: 85/bpm</p>
+            <p>Respiration: 12/bpm</p>
+            <p>Skin: Warm and Dry</p>
+            <p>Pearl: True</p>
+            <p>Extra Notes: </p>
+            </ul>
         </section>
       </main>
     </>
