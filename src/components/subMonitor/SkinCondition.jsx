@@ -16,7 +16,7 @@ export default function SkinCondition(props) {
           <li>Pay attention to the moisture level, is the person dry or sweaty?</li>
         </ol>
       </section>
-      <form><input type="text" /> <button className='submit-button' type="submit"></button> </form>
+      <form><input type="text" className ='monitor-text' placeholder='Input Here'/> <button className='submit-button' type="submit">Submit</button> </form>
       <button className='back-monitor' onClick={() => setSelectedMonitor(2)}>BACK</button>
       <button className='next-monitor' onClick={() => setSelectedMonitor(4)}>NEXT</button>
 

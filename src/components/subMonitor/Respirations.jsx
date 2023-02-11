@@ -17,7 +17,7 @@ export default function Respirations(props) {
           <li>Input the number you got in the form below.</li>
         </ol>
       </section>
-      <form><input type="text" /> <button className='submit-button' type="submit"></button> </form>
+      <form><input type="text" className ='monitor-text' placeholder='Input Here'/> <button className='submit-button' type="submit">Submit</button> </form>
       <button className='back-monitor' onClick={() => setSelectedMonitor(1)}>BACK</button>
       <button className='next-monitor' onClick={() => setSelectedMonitor(3)}>NEXT</button>
 

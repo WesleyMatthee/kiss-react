@@ -24,22 +24,34 @@ code {
   display: flex;
   flex-direction: column;
   padding-left: 0;
-  padding-top: 25px;
 }
 
 .container button{
+  background: #FF6262;
+  box-sizing: border-box;
+  color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-bottom: 15px;
-  padding-top: 15px;
-  padding-left: 100px;
-  padding-right: 100px;
+  font-family: Mija,-apple-system,BlinkMacSystemFont,Roboto,"Roboto Slab","Droid Serif","Segoe UI",system-ui,Arial,sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 3px;
+  padding: .7em 1em;
+  text-shadow: rgba(0, 0, 0, .8) 1px 1px 1px;
   margin-bottom: 15px;
   border-radius: 12px;
-  border-color: transparent;
-  background-color: #FF6262;
+}
+
+.container button:hover {
+  background-color: #f94e6d;
+}
+
+.container button:active {
+  background-color: #f94e6d;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 .button-buffer{
@@ -55,13 +67,69 @@ code {
 }
 
 .start-button{
-  background-color: rgb(22, 153, 22);
+  background-color: rgb(73, 158, 73);
+  font-family: Mija,-apple-system,BlinkMacSystemFont,Roboto,"Roboto Slab","Droid Serif","Segoe UI",system-ui,Arial,sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+.start-button:hover {
+  background-color: rgb(58, 128, 58);
+}
+
+.start-button:active {
+  background-color: rgb(58, 128, 58);
+  box-shadow: 0 5px #666;
+  transform: translateY(2px);
 }
 
 .monitor-button{
   background-color: cornflowerblue;
+  font-family: Mija,-apple-system,BlinkMacSystemFont,Roboto,"Roboto Slab","Droid Serif","Segoe UI",system-ui,Arial,sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+.monitor-button:hover {
+  background-color: rgb(81, 136, 237);
+}
+
+.monitor-button:active {
+  background-color: rgb(81, 136, 237);
+  box-shadow: 0 5px #666;
+  transform: translateY(2px);
 }
 
 .start-timer{
   background-color: rgb(22, 153, 22);
+}
+
+.nav-bar {
+  font-family: Mija,-apple-system,BlinkMacSystemFont,Roboto,"Roboto Slab","Droid Serif","Segoe UI",system-ui,Arial,sans-serif;
+  color: #fff;
+  display: flex;
+  align-items: center; 
+}
+
+.next-monitor {
+  margin-left: 15px;
+}
+
+.monitor-text {
+  width: 30%;
+  height: auto;
+  font-size: 20px;
+  height: 25px;
+  margin-bottom: 25px;
+  margin-right: 10px;
+  margin-left: 15px;
+  border-top: none;
+  border-left: none;
+  border-right  : none;
 }

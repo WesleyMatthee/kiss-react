@@ -16,7 +16,9 @@ export default function Pulse(props) {
           <li>Input the number you got in the form below.</li>
         </ol>
       </section>
-      <form><input type="text" /> <button className='submit-button' type="submit"></button> </form>
+     <div>
+      <form><input className ='monitor-text' type="text" placeholder='Input Here' /> <button className='submit-button' type="submit">Submit</button> </form>
+      </div> 
       <button className='next-monitor' onClick={() => setSelectedMonitor(2)}>NEXT</button>
 
     </main>

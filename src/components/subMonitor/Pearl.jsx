@@ -16,7 +16,7 @@ export default function Pearl(props) {
           <li>Repeat the previous steps for the other eye and make note if the pupils were both equally reactive to light</li>
         </ol>
       </section>
-      <form><input type="text" /> <button className='submit-button' type="submit"></button> </form>
+      <form><input type="text" className ='monitor-text' placeholder='Input Here'/> <button className='submit-button' type="submit">Submit</button> </form>
       <button className='back-monitor' onClick={() => setSelectedMonitor(3)}>BACK</button>
       <button className='next-monitor' onClick={() => setSelectedMonitor(5)}>NEXT</button>
 
