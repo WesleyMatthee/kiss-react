@@ -9,7 +9,7 @@ export default function Nav({isActive, seconds, setSeconds}) {
         <nav>
         <div className='nav-bar'>
           <img alt='White Logo' className='white-logo' src='/images/Kiss-Logo-White.png'></img>
-          <p>HOME PAGE</p>
+          <h1 className='Kiss'>KISS</h1>
         <output className='timer'>
           {isActive && 
           <Timer

@@ -2,6 +2,7 @@ import '../../index.css';
 import React from 'react';
 
 export default function SkinCondition(props) {
+
 	const { setSelectedMonitor, setIsRespirations, setIsPupils, setIsSkinCon } =
 		props;
 
@@ -16,12 +17,7 @@ export default function SkinCondition(props) {
 					</li>
 				</ol>
 			</section>
-			<form>
-				<input type='text' />{' '}
-				<button className='submit-button' type='submit'>
-					Submit
-				</button>{' '}
-			</form>
+		 <form><input type="text" className ='monitor-text' placeholder='Input Here'/> <button className='submit-button' type="submit">Submit</button> </form>
 			<button
 				className='back-monitor'
 				onClick={() => {
@@ -44,4 +40,5 @@ export default function SkinCondition(props) {
 			</button>
 		</main>
 	);
+
 }

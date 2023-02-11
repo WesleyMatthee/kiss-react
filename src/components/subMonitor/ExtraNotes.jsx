@@ -12,10 +12,9 @@ export default function ExtraNotes(props) {
 				</ul>
 			</section>
 			<form>
-				<input type='text' />{' '}
-				<button className='submit-button' type='submit'>
-					Submit
-				</button>{' '}
+      
+				<input type='text' className ='extraNotes-text'/>
+				<button className='submit-button' type='submit' placeholder='Input Here'>Submit</button>
 			</form>
 			<button
 				className='back-monitor'

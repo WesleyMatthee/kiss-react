@@ -2,8 +2,10 @@ import '../../index.css';
 import React from 'react';
 
 export default function Respirations(props) {
+
 	const { setSelectedMonitor, setIsPulse, setIsSkinCon, setIsRespirations } =
 		props;
+
 
 	return (
 		<main className='Monitor'>
@@ -22,12 +24,7 @@ export default function Respirations(props) {
 					<li>Input the number you got in the form below.</li>
 				</ol>
 			</section>
-			<form>
-				<input type='text' />{' '}
-				<button className='submit-button' type='submit'>
-					Submit
-				</button>{' '}
-			</form>
+			<form><input type="text" className ='monitor-text' placeholder='Input Here'/> <button className='submit-button' type="submit">Submit</button> </form>
 			<button
 				className='back-monitor'
 				onClick={() => {

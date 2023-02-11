@@ -2,7 +2,9 @@ import '../../index.css';
 import React from 'react';
 
 export default function Pearl(props) {
+
 	const { setSelectedMonitor, setIsSkinCon, setIsPupils, setIsHome } = props;
+
 
 	return (
 		<main className='Monitor'>
@@ -23,12 +25,7 @@ export default function Pearl(props) {
 					</li>
 				</ol>
 			</section>
-			<form>
-				<input type='text' />{' '}
-				<button className='submit-button' type='submit'>
-					Submit
-				</button>{' '}
-			</form>
+			  <form><input type="text" className ='monitor-text' placeholder='Input Here'/> <button className='submit-button' type="submit">Submit</button> </form>
 			<button
 				className='back-monitor'
 				onClick={() => {
