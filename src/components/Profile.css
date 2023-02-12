@@ -1,0 +1,14 @@
+.logout-button {
+  display: flex;
+  align-items: center;
+  height: 25px;
+  background: #FF6262;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: Mija,-apple-system,BlinkMacSystemFont,Roboto,"Roboto Slab","Droid Serif","Segoe UI",system-ui,Arial,sans-serif;
+  font-weight: 700;
+  line-height: 2px;
+  text-shadow: rgba(0, 0, 0, .8) 1px 1px 1px;
+  margin-left: 15px;
+  border-radius: 12px;
+}
