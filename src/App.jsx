@@ -15,6 +15,7 @@ import Report from "./components/Report";
 import Vital from "./components/Vital";
 import Profile from "./components/Profile";
 
+
 export default function App() {
 	const [selectedMonitor, setSelectedMonitor] = useState(0);
 	const [isActive, setIsActive] = useState(false);

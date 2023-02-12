@@ -9,22 +9,22 @@ export default function Report(props) {
   return (
     <>
       <main className='Root'>
-        <section className='container'>
+        <section className='histoy-container'>
+          <h1 className="History-title">Incidents History </h1>
           <ul className='history-button'>
-          <h1>Incidents History: </h1>
             <button className='history' onClick={() => { navigate('/vital')}}>
             <h3>CPR</h3>
-            <p>Location: Toronto</p>
+            <nobr>Location: Toronto</nobr>
             <p>Date: 2023-02-16</p>
             </button>
             <button className='history' onClick={() => { navigate('/vital')}}>
             <h3>Choking</h3>
-            <p>Location: Hamilton</p>
+            <nobr>Location: Hamilton</nobr>
             <p>Date: 2023-01-16</p>
             </button>
             <button className='history' onClick={() => { navigate('/vital')}}>
             <h3>CPR</h3>
-            <p>Location: Oakville</p>
+            <nobr>Location: Oakville</nobr>
             <p>Date: 2023-02-01</p>
             </button>
           </ul>
