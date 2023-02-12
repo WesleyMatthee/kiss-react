@@ -3,21 +3,31 @@ nav {
     
 }
 
-.nav-bar {
+/* .nav-bar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
+} */
 
 .white-logo {
+
     padding-left: 5px;
     padding-top: 5px;
     max-width: 40px;
     max-height: 40px;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.kiss {
+  margin-left: 30%;
+  font-family: 'Oswlad', sans-serif;
+  font-size: 25px;
 }
 
 .timer {
-    padding-right: 5px;
-    display: flex;
-    align-items: flex-end;
+    margin-right: 5px;
+    margin-left: auto;
+    /* display: flex; */
+    /* align-items: flex-end; */
 }
