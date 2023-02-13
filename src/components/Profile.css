@@ -5,10 +5,61 @@
   background: #FF6262;
   box-sizing: border-box;
   color: #fff;
-  font-family: Mija,-apple-system,BlinkMacSystemFont,Roboto,"Roboto Slab","Droid Serif","Segoe UI",system-ui,Arial,sans-serif;
+  font-family: Mija, -apple-system, BlinkMacSystemFont, Roboto, "Roboto Slab", "Droid Serif", "Segoe UI", system-ui, Arial, sans-serif;
   font-weight: 700;
   line-height: 2px;
   text-shadow: rgba(0, 0, 0, .8) 1px 1px 1px;
   margin-left: 15px;
   border-radius: 12px;
+}
+
+.login-button {
+  height: 25px;
+  background: #FF6262;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: Mija, -apple-system, BlinkMacSystemFont, Roboto, "Roboto Slab", "Droid Serif", "Segoe UI", system-ui, Arial, sans-serif;
+  font-weight: 700;
+  line-height: 2px;
+  text-shadow: rgba(0, 0, 0, .8) 1px 1px 1px;
+  margin-left: 15px;
+  border-radius: 12px;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-input {
+  margin-bottom: 20px;
+  height: 25px;
+  border: 2px solid #FF6262;
+}
+
+.login-title {
+  font-size: 35px;
+  margin-bottom: 44px;
+  color: #FF6262;
+  font-family: Mija, -apple-system, BlinkMacSystemFont, Roboto, "Roboto Slab", "Droid Serif", "Segoe UI", system-ui, Arial, sans-serif;
+  font-weight: 700;
+  line-height: 3px;
+  text-shadow: rgba(0, 0, 0, .8) 1px 1px 1px;
+}
+
+.register-title {
+  font-size: 35px;
+  margin-bottom: 44px;
+  color: #FF6262;
+  font-family: Mija, -apple-system, BlinkMacSystemFont, Roboto, "Roboto Slab", "Droid Serif", "Segoe UI", system-ui, Arial, sans-serif;
+  font-weight: 700;
+  line-height: 3px;
+  text-shadow: rgba(0, 0, 0, .8) 1px 1px 1px;
+}
+
+.hyper-link {
+  padding-top: 35px;
+  color: #FF6262;
+  font-family: Mija, -apple-system, BlinkMacSystemFont, Roboto, "Roboto Slab", "Droid Serif", "Segoe UI", system-ui, Arial, sans-serif;
 }
