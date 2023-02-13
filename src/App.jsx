@@ -1,19 +1,19 @@
-import { Route, Routes } from "react-router-dom";
-import React, { useState } from "react";
-import Nav from "./components/Templates/nav";
-import Footer from "./components/Templates/footer";
-import Home from "./components/Home";
-import CPR from "./components/Cpr";
-import Choking from "./components/Choking";
-import Carousel from "./components/Templates/Carousel";
-import { CarouselItem } from "./components/Templates/CarouselItem";
-import ErrorPage from "./error-page";
-import StartTimer from "./components/Templates/StartTimer";
-import MonitorButton from "./components/Templates/MonitorButton";
-import Monitor from "./components/Monitor";
-import Report from "./components/Report";
-import Vital from "./components/Vital";
-import Profile from "./components/Profile";
+import { Route, Routes } from 'react-router-dom';
+import React, { useState } from 'react';
+import Nav from './components/Templates/nav';
+import Footer from './components/Templates/footer';
+import Home from './components/Home';
+import CPR from './components/Cpr';
+import Choking from './components/Choking';
+import Carousel from './components/Templates/Carousel';
+import { CarouselItem } from './components/Templates/CarouselItem';
+import ErrorPage from './error-page';
+import StartTimer from './components/Templates/StartTimer';
+import MonitorButton from './components/Templates/MonitorButton';
+import Monitor from './components/Monitor';
+import Report from './components/Report';
+import Vital from './components/Vital';
+import Profile from './components/Profile';
 
 export default function App() {
 	const [selectedMonitor, setSelectedMonitor] = useState(0);
@@ -235,6 +235,9 @@ export default function App() {
 							setIsPupils={setIsPupils}
 							setSelectedMonitor={setSelectedMonitor}
 							selectedMonitor={selectedMonitor}
+							setIsInfant={setIsInfant}
+							setIsChild={setIsChild}
+							setIsAdult={setIsAdult}
 							setIsHome={setIsHome}
 						/>
 					}

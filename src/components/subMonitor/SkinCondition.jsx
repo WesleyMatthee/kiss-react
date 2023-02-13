@@ -17,7 +17,7 @@ export default function SkinCondition(props) {
 					</li>
 				</ol>
 			</section>
-		 <form><input type="text" className ='monitor-text' placeholder='Input Here'/> <button className='submit-button' type="submit">Submit</button> </form>
+		 <form><input type="text" className ='monitor-text' placeholder='Input Here'/> </form>
 			<button
 				className='back-monitor'
 				onClick={() => {
