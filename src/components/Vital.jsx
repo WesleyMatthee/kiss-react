@@ -1,15 +1,14 @@
 import React from "react";
-import "../index.css";
+import "./Vital.css";
 
 export default function Vital () {
 
 
   return (
     <>
-      <main className='Root'>
-        <section className='container'>
-        <ul>
-        <h3>CPR</h3>
+        <section className='vitals'>
+        <h2>CPR</h2>
+        <ul className="vitals-list">
             <p>Location: Toronto</p>
             <p>Date: 2023-02-16</p>
             <p>Pulse: 85/bpm</p>
@@ -19,7 +18,7 @@ export default function Vital () {
             <p>Extra Notes: </p>
             </ul>
         </section>
-      </main>
-    </>
+        </>
+
   );
 }
