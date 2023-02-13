@@ -1,14 +1,20 @@
-import { useNavigate } from "react-router-dom"
-import React from "react";
-import '../../index.css'
+import { useNavigate } from 'react-router-dom';
+import React from 'react';
+import '../../index.css';
 
-export default function MonitorButton({setSelectedMonitor, selectedMonitor}) {
-  const navigate = useNavigate();
-  
-  return (
-    <button className='monitor-button' type='button' onClick={() => {
-      setSelectedMonitor(0)
-      navigate('/monitor')}
-    }>MONITOR</button>
-  )
-}; 
+export default function MonitorButton({ setSelectedMonitor, selectedMonitor }) {
+	const navigate = useNavigate();
+
+	return (
+		<button
+			className='monitor-button'
+			type='button'
+			onClick={() => {
+				setSelectedMonitor(0);
+				navigate('/monitor');
+			}}
+		>
+			MONITOR
+		</button>
+	);
+}

@@ -14,27 +14,41 @@ export default function Monitor({
 	setIsRespirations,
 	setIsSkinCon,
 	setIsPupils,
+	setIsAdult,
+	setIsChild,
+	setIsInfant,
 }) {
+	//
+	function setCprFalse() {
+		setIsAdult(false);
+		setIsChild(false);
+		setIsInfant(false);
+	}
 	//Functions for onClick events
 	function setSelectedMonitorPulse() {
 		setSelectedMonitor(1);
 		setIsPulse(true);
+		setCprFalse();
 	}
 	function setSelectedMonitorRespirations() {
 		setSelectedMonitor(2);
 		setIsRespirations(true);
+		setCprFalse();
 	}
 	function setSelectedMonitorSkinCon() {
 		setSelectedMonitor(3);
 		setIsSkinCon(true);
+		setCprFalse();
 	}
 	function setSelectedMonitorPupils() {
 		setSelectedMonitor(4);
 		setIsPupils(true);
+		setCprFalse();
 	}
 	function setSelectedMonitorHome() {
 		setSelectedMonitor(5);
 		setIsHome(true);
+		setCprFalse();
 	}
 
 	return (
