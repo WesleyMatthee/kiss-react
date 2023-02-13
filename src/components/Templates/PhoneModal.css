@@ -1,13 +1,15 @@
 .phone-modal {
   margin-top: 100px;
-  margin-left: 50px;
+  margin-left: 60px;
   margin-right: 50px;
   z-index: 1000;
 }
 
 .close-modal {
-  background-color: none;
+  color: white;
   z-index: 1000;
+  width: 20px;
+  height: 20px;
 }
 
 .dark-overlay {
@@ -21,7 +23,7 @@
 }
 
 .swipe-button {
-  margin-left: 50px;
+  margin-left: 80px;
   text-align: center;
   width: 250px;
   font-size: 30;
