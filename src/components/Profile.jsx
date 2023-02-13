@@ -41,7 +41,7 @@ export default function Profile() {
               <div>
                 <input type="text" className="login-input" placeholder="Email" />
               </div>
-              <input type="text" className="login-input" placeholder="Password" />
+              <input type="password" className="login-input" placeholder="Password" />
               <div>
                 <button className="login-button" onClick={() => setLoginStatus(2)}>Login</button>
               </div>
