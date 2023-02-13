@@ -54,10 +54,10 @@ export default function Profile() {
       {loginStatus === 2 && (
         <main className='Root'>
           <section className='container'>
-            <ul>
-              <h3>David Figueroa</h3>
-              <p>Email: davidfig@kiss.com</p>
-              <p>Member since: 2023</p>
+            <ul className="profile-list">
+              <h4>David Figueroa</h4>
+              <p className="profile">Email: davidfig@kiss.com</p>
+              <p className="profile">Member since: 2023</p>
             </ul>
           </section>
           <button className="logout-button" onClick={() => setLoginStatus(1)}>Logout</button>

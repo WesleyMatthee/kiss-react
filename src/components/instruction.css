@@ -11,7 +11,7 @@
     color: rgb(92, 98, 135);
     font-weight: 400;
     font-family: Mija,-apple-system,BlinkMacSystemFont,Roboto,"Roboto Slab","Droid Serif","Segoe UI",system-ui,Arial,sans-serif;;
-    text-shadow: rgba(0, 0, 0, .8) 1px 1px 1px;
+    /* text-shadow: rgba(0, 0, 0, .8) 1px 1px 1px; */
     margin-bottom: 15px;
     border-radius: 12px;
     width: 70%
