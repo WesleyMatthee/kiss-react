@@ -8,8 +8,8 @@ export default function Pearl(props) {
 
 	return (
 		<main className='Monitor'>
-			<section className='container'>
-				<ol className='pearl-steps'>
+			<section className='instructions'>
+				<ol className='instruction-steps'>
 					<li>Cover both of their eyes.</li>
 					<li>
 						Using either natural sunlight or a phone light, uncover one of their

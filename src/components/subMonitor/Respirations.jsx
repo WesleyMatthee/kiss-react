@@ -9,8 +9,8 @@ export default function Respirations(props) {
 
 	return (
 		<main className='Monitor'>
-			<section className='container'>
-				<ol className='respirations-steps'>
+			<section className='instructions'>
+				<ol className='instruction-steps'>
 					<li>Watch the chest for it rising.</li>
 					<li>
 						Pay attention to the depth of each breath, is it a full breath? is
