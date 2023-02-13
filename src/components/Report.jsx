@@ -1,5 +1,6 @@
 import React from "react";
 import "../index.css";
+import "./Report.css"
 import { useNavigate } from "react-router-dom";
 
 export default function Report(props) {
