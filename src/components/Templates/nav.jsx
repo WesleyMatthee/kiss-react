@@ -11,11 +11,14 @@ export default function Nav({ isActive, seconds, setSeconds }) {
 					className='white-logo'
 					src='/images/Kiss-Logo-White.png'
 				></img>
-				<img
+        <span className='kiss'>
+          KISS
+        </span>
+				{/* <img
 					alt='White Logo'
 					className='kiss'
 					src='/images/kiss_nav.png'
-				></img>
+				></img> */}
 				<output className='timer'>
 					{isActive && (
 						<Timer
