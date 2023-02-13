@@ -26,6 +26,7 @@ export default function Pulse(props) {
 			</section>
 			<form><input className ='monitor-text' type="text" placeholder='Input Here' /> </form>
 			<button
+      id='pulse-next'
 				className='next-monitor'
 				onClick={() => {
 					setSelectedMonitor(2);
