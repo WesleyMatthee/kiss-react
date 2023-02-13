@@ -148,11 +148,25 @@ export default function App() {
 							src='/images/monitor_temp.png'
 						/>
 					</CarouselItem>
+					<CarouselItem>
+						<img
+							alt='image01'
+							className='carousel-img'
+							src='/images/monitor_temp.png'
+						/>
+					</CarouselItem>
 				</Carousel>
 			);
 		} else if (isPupils) {
 			return (
 				<Carousel>
+					<CarouselItem>
+						<img
+							alt='image01'
+							className='carousel-img'
+							src='/images/monitor_pupils.png'
+						/>
+					</CarouselItem>
 					<CarouselItem>
 						<img
 							alt='image01'
