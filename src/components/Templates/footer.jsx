@@ -18,7 +18,7 @@ export default function Footer({
 	setIsPulse,
 	setIsRespirations,
 	setIsSkinCon,
-	setIsPupils
+	setIsPupils,
 }) {
 	const [isOpen, setIsOpen] = useState(false);
 	const navigate = useNavigate();
@@ -48,9 +48,11 @@ export default function Footer({
 						onClick={() => navigate('/report')}
 						className='footer-icon'
 					/>
-					<FontAwesomeIcon icon={faUser} 
-					onClick={() => navigate('/profile')}
-					className='footer-icon' />
+					<FontAwesomeIcon
+						icon={faUser}
+						onClick={() => navigate('/profile')}
+						className='footer-icon'
+					/>
 					<FontAwesomeIcon
 						icon={faPhone}
 						onClick={() => setIsOpen(true)}

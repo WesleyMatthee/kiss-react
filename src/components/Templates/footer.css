@@ -32,3 +32,11 @@
   padding: 0.5em 0.6em
 }
 
+.footer-icon:hover {
+  /* width: 27px;
+  height: 27px; */
+  transform: translateY(-4px);
+  box-shadow: 0 4px #9a9a9a;
+
+}
+
