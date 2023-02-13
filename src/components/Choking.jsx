@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import '../index.css'
+import './instruction.css';
 
 
 export default function Choking() {
@@ -21,8 +22,8 @@ export default function Choking() {
 
   if (selectedAge) {
     return (
-      <section className='container'>
-        <ol className='choking-steps'>
+      <section className='instructions'>
+        <ol className='instruction-steps'>
           {selectedAge === 'Adult' &&
             <>
               <li> Make sure the scene if safe for you to approach. </li>

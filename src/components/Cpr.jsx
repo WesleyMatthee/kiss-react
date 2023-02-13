@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import '../index.css';
+import './instruction.css';
 
 export default function CPR({ setIsAdult, setIsChild, setIsInfant }) {
 	const [selectedAge, setSelectedAge] = useState('');
@@ -38,10 +39,10 @@ export default function CPR({ setIsAdult, setIsChild, setIsInfant }) {
 
 	if (selectedAge) {
 		return (
-			<section className='container'>
-				<ol className='cpr-steps'>
+			<section className='instructions'>
+				<ol className='instruction-steps'>
 					{selectedAge === 'Adult' && (
-						<>
+						<div className='age-stage'>
 							<li> Make sure the scene if safe for you to approach. </li>
 							<li>
 								{' '}
@@ -72,10 +73,10 @@ export default function CPR({ setIsAdult, setIsChild, setIsInfant }) {
 								for a few seconds.{' '}
 							</li>
 							<li> STOP once you see signs of life or help arrives </li>
-						</>
+						</div>
 					)}
 					{selectedAge === 'Child' && (
-						<>
+						<div className='age-stage'>
 							<li> Make sure the scene if safe for you to approach. </li>
 							<li>
 								{' '}
@@ -103,10 +104,10 @@ export default function CPR({ setIsAdult, setIsChild, setIsInfant }) {
 								for a few seconds.{' '}
 							</li>
 							<li> STOP once you see signs of life or help arrives </li>
-						</>
+						</div>
 					)}
 					{selectedAge === 'Infant' && (
-						<>
+						<div className='age-stage'>
 							<li> Make sure the scene if safe for you to approach. </li>
 							<li>
 								{' '}
@@ -136,7 +137,7 @@ export default function CPR({ setIsAdult, setIsChild, setIsInfant }) {
 								for a few seconds.{' '}
 							</li>
 							<li> STOP once you see signs of life or help arrives </li>
-						</>
+						</div>
 					)}
 				</ol>
 			</section>
