@@ -34,13 +34,6 @@ export default function App() {
 				<Carousel>
 					<CarouselItem>
 						<img
-							alt='image01'
-							className='carousel-img'
-							src='/images/cpr_01.png'
-						/>
-					</CarouselItem>
-					<CarouselItem>
-						<img
 							alt='image02'
 							className='carousel-img'
 							src='/images/cpr_02.png'
@@ -133,7 +126,14 @@ export default function App() {
 						<img
 							alt='image01'
 							className='carousel-img'
-							src='/images/monitor_breathing.png'
+							src='/images/breathing_01.png'
+						/>
+					</CarouselItem>
+					<CarouselItem>
+						<img
+							alt='image01'
+							className='carousel-img'
+							src='/images/breathing_02.png'
 						/>
 					</CarouselItem>
 				</Carousel>
