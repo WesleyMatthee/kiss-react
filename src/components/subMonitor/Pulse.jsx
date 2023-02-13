@@ -7,8 +7,8 @@ export default function Pulse(props) {
 
 	return (
 		<main className='Monitor'>
-			<section className='container'>
-				<ol className='pulse-steps'>
+			<section className='instructions'>
+				<ol className='instruction-steps'>
 					<li>
 						Place two fingers on the radial artery as shown above, if the
 						casualty is concsious.

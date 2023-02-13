@@ -6,8 +6,8 @@ export default function ExtraNotes(props) {
 
 	return (
 		<main className='Monitor'>
-			<section className='container'>
-				<ul className='extraNotes-steps'>
+			<section className='instructions'>
+				<ul className='instruction-steps'>
 					<p>Please input any extra information or notes here.</p>
 				</ul>
 			</section>

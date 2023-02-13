@@ -8,8 +8,8 @@ export default function SkinCondition(props) {
 
 	return (
 		<main className='Monitor'>
-			<section className='container'>
-				<ol className='skinCondition-steps'>
+			<section className='instructions'>
+				<ol className='instruction-steps'>
 					<li>Using the back of your hand, place it on their forehead.</li>
 					<li>Pay attention to temperature, is the person cool or warm?</li>
 					<li>
